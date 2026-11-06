@@ -46,7 +46,7 @@ python render_preview.py gpt # write preview_gpt.png
 ```
 
 - `build_set.py`: generates every piece with [manifold3d](https://github.com/elalish/manifold) (CSG).
-- `svg_emblem.py`: a small SVG path reader that turns `gpt-teweaked-icon.svg` into the GPT emblem.
+- `svg_emblem.py`: a small SVG path reader that turns `gpt-icon.svg` into the GPT emblem.
 - `render_preview.py`: preview renders with matplotlib.
 
 ## License

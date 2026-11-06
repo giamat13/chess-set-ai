@@ -179,7 +179,7 @@ _GPT_CS = None
 
 
 def emblem_cs(model):
-    """2D model emblem, about 8.8 mm radius. claude = starburst, gpt = logo from gpt-teweaked-icon.svg."""
+    """2D model emblem, about 8.8 mm radius. claude = starburst, gpt = logo from gpt-icon.svg."""
     if model == "claude":
         lens = [8.6, 7.4, 8.2, 7.0, 8.8, 7.6, 8.0, 7.2, 8.6, 7.0, 8.4, 7.6]
         cs = CrossSection.circle(2.6, 40)
@@ -190,7 +190,7 @@ def emblem_cs(model):
         return cs
     global _GPT_CS
     if _GPT_CS is None:  # the user's logo file, even-odd fill like the SVG
-        polys = svg_polygons(os.path.join(os.path.dirname(os.path.abspath(__file__)), "gpt-teweaked-icon.svg"))
+        polys = svg_polygons(os.path.join(os.path.dirname(os.path.abspath(__file__)), "gpt-icon.svg"))
         _GPT_CS = CrossSection(polys, FillRule.EvenOdd)
     return _GPT_CS
 
