@@ -6,7 +6,13 @@ A 3D-printable chess set themed on AI and technology. Every piece is a piece of 
 
 | Claude (white) | GPT (black) |
 |---|---|
-| ![Claude side](preview.png) | ![GPT side](preview_gpt.png) |
+| ![Claude side](images/preview_claude.png) | ![GPT side](images/preview_gpt.png) |
+
+### No-logo version
+
+There is also a version with no brand logos (in `stl/plain/`). Every emblem is replaced by a generic network node: three nodes in a triangle plus a centre node, all linked. Print one set in white and one in black. This version contains no trademarks.
+
+![No-logo version](images/preview_plain.png)
 
 ## The pieces
 
@@ -23,9 +29,16 @@ All pieces stand on a microchip base.
 
 ## Files
 
-- `*_claude.stl` and `*_gpt.stl`: one file per piece. You need 1 king, 1 queen, 2 bishops, 2 knights, 2 rooks and 8 pawns per side.
-- `plate_white_claude_16_pieces.stl` and `plate_black_gpt_16_pieces.stl`: a whole side (16 pieces) on one 4x4 plate.
-- `preview.png` and `preview_gpt.png`: preview renders.
+```
+stl/claude/   Claude side (white): one STL per piece + a 16-piece plate
+stl/gpt/      GPT side (black)
+stl/plain/    no-logo version
+images/       preview renders
+src/          the generator code
+assets/       the GPT logo SVG used for the emblem
+```
+
+Each folder has one file per piece. You need 1 king, 1 queen, 2 bishops, 2 knights, 2 rooks and 8 pawns per side. The `plate_*_16_pieces.stl` file puts a whole side on one 4x4 plate.
 
 ## Printing
 
@@ -39,14 +52,15 @@ Requires Python 3.10 or newer.
 
 ```bash
 pip install -r requirements.txt
-python build_set.py          # Claude side (white)
-python build_set.py gpt      # GPT side (black)
-python check_parts.py gpt    # check that every piece is one solid part
-python render_preview.py gpt # write preview_gpt.png
+python src/build_set.py claude    # Claude side (white) -> stl/claude/
+python src/build_set.py gpt       # GPT side (black)    -> stl/gpt/
+python src/build_set.py plain     # no-logo version     -> stl/plain/
+python src/check_parts.py gpt     # check that every piece is one solid part
+python src/render_preview.py gpt  # -> images/preview_gpt.png
 ```
 
 - `build_set.py`: generates every piece with [manifold3d](https://github.com/elalish/manifold) (CSG).
-- `svg_emblem.py`: a small SVG path reader that turns `gpt-icon.svg` into the GPT emblem.
+- `svg_emblem.py`: a small SVG path reader that turns `assets/gpt-icon.svg` into the GPT emblem.
 - `render_preview.py`: preview renders with matplotlib.
 
 ## License

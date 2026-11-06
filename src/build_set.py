@@ -19,7 +19,7 @@ from manifold3d import CrossSection, FillRule, JoinType, Manifold, OpType
 
 from svg_emblem import svg_polygons
 
-OUT = os.path.dirname(os.path.abspath(__file__))  # STL files go in the project root
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # project root (this file is in src/)
 SEG = 64  # circle resolution
 
 
@@ -188,9 +188,21 @@ def emblem_cs(model):
             cs = cs + CrossSection.batch_hull([CrossSection.circle(1.25, 24),
                                                CrossSection.circle(0.55, 16).translate((L * np.cos(a), L * np.sin(a)))])
         return cs
+    if model == "plain":  # no brand logo: a tiny network graph (3 outer nodes + a centre node, all linked)
+        pts = [(0.0, 0.0)] + [(6.4 * np.cos(np.radians(90 + 120 * k)), 6.4 * np.sin(np.radians(90 + 120 * k)))
+                              for k in range(3)]
+        cs = None
+        for i in range(4):
+            for j in range(i + 1, 4):
+                e = CrossSection.batch_hull([CrossSection.circle(0.75, 16).translate(pts[i]),
+                                             CrossSection.circle(0.75, 16).translate(pts[j])])
+                cs = e if cs is None else cs + e
+        for i, p in enumerate(pts):
+            cs = cs + CrossSection.circle(2.4 if i else 2.0, 40).translate(p)
+        return cs
     global _GPT_CS
     if _GPT_CS is None:  # the user's logo file, even-odd fill like the SVG
-        polys = svg_polygons(os.path.join(os.path.dirname(os.path.abspath(__file__)), "gpt-icon.svg"))
+        polys = svg_polygons(os.path.join(ROOT, "assets", "gpt-icon.svg"))
         _GPT_CS = CrossSection(polys, FillRule.EvenOdd)
     return _GPT_CS
 
@@ -666,6 +678,7 @@ def write_stl(m, path):
 
 
 def main():
+    OUT = os.path.join(ROOT, "stl", MODEL)  # stl/claude, stl/gpt, stl/plain
     os.makedirs(OUT, exist_ok=True)
     built = {}
     names = list(PIECES)
@@ -689,7 +702,8 @@ def main():
         print("@@sub done", flush=True)
 
     # one plate per side (16 pieces each), 4 x 4 grid: white = Claude king, black = GPT king
-    for side, kname in ((f"{'white' if MODEL == 'claude' else 'black'}_{MODEL}", "king"),):
+    side_name = {"claude": "white_claude", "gpt": "black_gpt"}.get(MODEL, MODEL)
+    for side, kname in ((side_name, "king"),):
         print(f"@@now building {side} plate", flush=True)
         order = ["rook_gpu", "knight_mcp", "bishop_terminal", kname,
                  "queen_context", "bishop_terminal", "knight_mcp", "rook_gpu"] + ["pawn_neuron"] * 8
