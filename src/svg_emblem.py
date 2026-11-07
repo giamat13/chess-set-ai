@@ -143,14 +143,111 @@ def path_polygons(d):
     return polys
 
 
-def svg_polygons(path, radius=8.8):
-    """All path polygons of an SVG, y flipped, centred, scaled to fit `radius`."""
-    txt = open(path, encoding="utf-8").read()
-    polys = []
-    for d in re.findall(r'\sd="([^"]+)"', txt):
-        polys += path_polygons(d)
-    pts = np.vstack([np.array(p) for p in polys])
+def _style(el, key):
+    v = el.get(key)
+    st = el.get("style", "")
+    m = re.search(key + r"\s*:\s*([^;]+)", st)
+    return m.group(1).strip() if m else v
+
+
+def _shape_d(el, tag):
+    """Path data for basic shapes, so plain <circle>/<rect>/<polygon> icons work too."""
+    g = lambda k, dflt=0.0: float(el.get(k, dflt))
+    if tag == "path":
+        return el.get("d")
+    if tag in ("circle", "ellipse"):
+        cx, cy = g("cx"), g("cy")
+        rx = g("r") if tag == "circle" else g("rx")
+        ry = g("r") if tag == "circle" else g("ry")
+        return f"M{cx-rx},{cy}A{rx},{ry} 0 1 0 {cx+rx},{cy}A{rx},{ry} 0 1 0 {cx-rx},{cy}Z"
+    if tag == "rect":
+        x, y, w, h = g("x"), g("y"), g("width"), g("height")
+        return f"M{x},{y}H{x+w}V{y+h}H{x}Z"
+    if tag in ("polygon", "polyline"):
+        return "M" + el.get("points", "").strip() + "Z"
+    return None
+
+
+def svg_shapes(path):
+    """Every filled shape in an SVG as (polygons, fill_rule), in SVG coordinates.
+
+    Skips what is not part of the outline: anything inside a filter (blur glows, like
+    Gemini's colour blobs), <defs>/<clipPath>/<title>, shapes with fill="none", raster
+    images, and exact duplicates (a mask copy of the same outline).
+    Transforms are not applied; most icon SVGs do not use them.
+    """
+    import codecs
+    import xml.etree.ElementTree as ET
+    raw = open(path, "rb").read()
+    enc = "utf-16" if raw[:2] in (codecs.BOM_UTF16_LE, codecs.BOM_UTF16_BE) else "utf-8-sig"
+    root = ET.fromstring(raw.decode(enc))
+    out, seen = [], set()
+
+    def walk(el, rule, fill, skip):
+        tag = el.tag.split("}")[-1]
+        if tag in ("defs", "clipPath", "title", "desc", "style", "linearGradient", "radialGradient", "filter"):
+            return
+        skip = skip or el.get("filter") is not None
+        rule = _style(el, "fill-rule") or _style(el, "clip-rule") or rule
+        fill = _style(el, "fill") or fill
+        d = _shape_d(el, tag)
+        if d and not skip and fill != "none":
+            if d not in seen:
+                seen.add(d)
+                polys = [p for p in path_polygons(d) if len(p) >= 3]
+                if polys:
+                    out.append((polys, rule, fill))
+        for ch in el:
+            walk(ch, rule, fill, skip)
+
+    walk(root, "nonzero", "black", False)
+    return _roles(out)
+
+
+WHITE = ("#fff", "#ffffff", "white", "#fefefe")
+
+
+def _roles(shapes):
+    """Turn painted shapes into (polygons, fill_rule, op) with op "add" or "sub".
+
+    - An app-icon background square (a shape covering ~all of the icon) is dropped.
+    - White shapes painted over coloured ones are cut-outs (op "sub"), e.g. Qwen's inner lines.
+    """
+    if not shapes:
+        return []
+
+    def box(polys):
+        a = np.vstack([np.array(p) for p in polys])
+        return a.min(0), a.max(0)
+
+    lo = np.min([box(p)[0] for p, _, _ in shapes], 0)
+    hi = np.max([box(p)[1] for p, _, _ in shapes], 0)
+    full = np.prod(hi - lo)
+    def fill_area(polys):
+        return abs(sum(0.5 * np.sum(np.array(p)[:, 0] * np.roll(np.array(p)[:, 1], -1)
+                                    - np.roll(np.array(p)[:, 0], -1) * np.array(p)[:, 1]) for p in polys))
+
+    def is_tile(polys):  # spans the whole icon and is nearly solid, like a rounded square
+        b = box(polys)
+        return np.prod(b[1] - b[0]) >= 0.9 * full and fill_area(polys) >= 0.8 * np.prod(b[1] - b[0])
+
+    if len(shapes) > 1:
+        kept = [s for s in shapes if not is_tile(s[0])]
+        if kept:
+            shapes = kept
+    colour = [s for s in shapes if str(s[2]).lower() not in WHITE]
+    out = []
+    for polys, rule, fill in shapes:
+        white = str(fill).lower() in WHITE
+        out.append((polys, rule, "sub" if white and colour else "add"))
+    return out
+
+
+def normalise(shapes, radius=8.8):
+    """Centre all shapes on the origin, flip y (SVG y points down) and scale to `radius`."""
+    pts = np.vstack([np.array(p) for polys, _, op in shapes if op == "add" for p in polys])
     lo, hi = pts.min(0), pts.max(0)
     ctr = (lo + hi) / 2
     f = radius / (np.max(hi - lo) / 2)
-    return [[((x - ctr[0]) * f, -(y - ctr[1]) * f) for x, y in p] for p in polys if len(p) >= 3]
+    return [([[((x - ctr[0]) * f, -(y - ctr[1]) * f) for x, y in p] for p in polys], rule, op)
+            for polys, rule, op in shapes]

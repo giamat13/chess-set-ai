@@ -17,7 +17,7 @@ from functools import reduce
 import numpy as np
 from manifold3d import CrossSection, FillRule, JoinType, Manifold, OpType
 
-from svg_emblem import svg_polygons
+from svg_emblem import normalise, svg_shapes
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # project root (this file is in src/)
 SEG = 64  # circle resolution
@@ -94,7 +94,7 @@ def ycyl(r, y_a, y_b, z, x=0.0, seg=SEG):
 def fan_rotor(r, y_a, y_b, z, blades=7):
     """Cooling fan: hub + curved swept blades, axis along y."""
     lo, hi = min(y_a, y_b), max(y_a, y_b)
-    parts = [ycyl(2.4, lo, hi, z, seg=32)]
+    parts = [ycyl(3.5, lo, hi, z, seg=40)]  # hub, big enough to carry the emblem
     for k in range(blades):
         a0 = 2 * np.pi * k / blades
         pts = []
@@ -175,11 +175,11 @@ if __name__ == "__main__" and len(sys.argv) > 1:
     MODEL = sys.argv[1]  # python build_set.py gpt
 
 
-_GPT_CS = None
+_LOGO_CS = {}  # logos are read from assets/<model>.svg (see logo_file)
 
 
 def emblem_cs(model):
-    """2D model emblem, about 8.8 mm radius. claude = starburst, gpt = logo from gpt-icon.svg."""
+    """2D model emblem, about 8.8 mm radius. claude = starburst, plain = network graph, others from LOGOS."""
     if model == "claude":
         lens = [8.6, 7.4, 8.2, 7.0, 8.8, 7.6, 8.0, 7.2, 8.6, 7.0, 8.4, 7.6]
         cs = CrossSection.circle(2.6, 40)
@@ -189,22 +189,67 @@ def emblem_cs(model):
                                                CrossSection.circle(0.55, 16).translate((L * np.cos(a), L * np.sin(a)))])
         return cs
     if model == "plain":  # no brand logo: a tiny network graph (3 outer nodes + a centre node, all linked)
-        pts = [(0.0, 0.0)] + [(6.4 * np.cos(np.radians(90 + 120 * k)), 6.4 * np.sin(np.radians(90 + 120 * k)))
+        # one node points down: standing upright it rests on the post below it and every other
+        # node is carried by a rising link, so nothing starts in mid-air when printed
+        pts = [(0.0, 0.0)] + [(6.4 * np.cos(np.radians(-90 + 120 * k)), 6.4 * np.sin(np.radians(-90 + 120 * k)))
                               for k in range(3)]
         cs = None
         for i in range(4):
             for j in range(i + 1, 4):
-                e = CrossSection.batch_hull([CrossSection.circle(0.75, 16).translate(pts[i]),
-                                             CrossSection.circle(0.75, 16).translate(pts[j])])
+                e = CrossSection.batch_hull([CrossSection.circle(1.2, 16).translate(pts[i]),
+                                             CrossSection.circle(1.2, 16).translate(pts[j])])
                 cs = e if cs is None else cs + e
         for i, p in enumerate(pts):
             cs = cs + CrossSection.circle(2.4 if i else 2.0, 40).translate(p)
         return cs
-    global _GPT_CS
-    if _GPT_CS is None:  # the user's logo file, even-odd fill like the SVG
-        polys = svg_polygons(os.path.join(ROOT, "assets", "gpt-icon.svg"))
-        _GPT_CS = CrossSection(polys, FillRule.EvenOdd)
-    return _GPT_CS
+    if model not in _LOGO_CS:  # logo read from assets/<model>.svg
+        cs = None
+        for polys, rule, op in normalise(svg_shapes(logo_file(model))):
+            c = CrossSection(polys, FillRule.EvenOdd if rule == "evenodd" else FillRule.NonZero)
+            if op == "sub":
+                cs = cs - c if cs is not None else cs
+            else:
+                cs = c if cs is None else cs + c
+        _LOGO_CS[model] = connect_parts(cs)
+    return _LOGO_CS[model]
+
+
+def logo_file(model):
+    for name in (f"{model}.svg", f"{model}-icon.svg"):
+        p = os.path.join(ROOT, "assets", name)
+        if os.path.exists(p):
+            return p
+    raise SystemExit(f"no logo for '{model}': put {model}.svg in assets/")
+
+
+def all_models():
+    """claude and plain are drawn in code; every SVG in assets/ adds one more version."""
+    import glob
+    svgs = sorted(os.path.basename(p)[:-4].replace("-icon", "") for p in glob.glob(os.path.join(ROOT, "assets", "*.svg")))
+    return ["claude"] + [m for m in svgs if m not in ("claude", "plain")] + ["plain"]
+
+
+def connect_parts(cs, r=0.7):
+    """Join a logo made of separate pieces (e.g. Grok's two strokes) with small bridges at their
+    closest points, so a free-standing emblem prints as one part."""
+    parts = sorted(cs.decompose(), key=lambda c: -c.area())
+    parts = [p for p in parts if p.area() > 0.5]
+    if len(parts) < 2:
+        return cs
+    pts = lambda c: np.vstack([np.array(p) for p in c.to_polygons()])
+    out, joined = parts[0], pts(parts[0])
+    for p in parts[1:]:
+        q = pts(p)
+        d = ((joined[:, None, :] - q[None, :, :]) ** 2).sum(-1)
+        i, j = np.unravel_index(np.argmin(d), d.shape)
+        a, b = joined[i], q[j]
+        # push the bridge ends slightly into each part so it overlaps both
+        u = (b - a) / (np.linalg.norm(b - a) + 1e-9)
+        bridge = CrossSection.batch_hull([CrossSection.circle(r, 16).translate(tuple(a - u * r)),
+                                          CrossSection.circle(r, 16).translate(tuple(b + u * r))])
+        out = out + p + bridge
+        joined = np.vstack([joined, q])
+    return out
 
 
 def emblem_flat(model, radius, h, z0=0.0):
@@ -217,6 +262,24 @@ def emblem_xz(model, radius, thick):
     """Emblem standing up in the x-z plane, centred on the origin."""
     f = radius / 8.8
     return Manifold.extrude(emblem_cs(model).scale((f, f)), thick).rotate((90, 0, 0)).translate((0, thick / 2, 0))
+
+
+def medallion(model, radius, thick):
+    """A standing emblem on top of a piece. Brand logos sit on a round coin (thinner than the
+    logo, so the logo stands out on both faces): parts of a logo that hang below its centre,
+    or thin strokes, would otherwise start in mid-air or snap off. The open network graph of
+    the no-logo version is printable as it is."""
+    e = emblem_xz(model, radius, thick)
+    if model == "plain":
+        return e
+    # the coin reaches past the logo's farthest point (corners of a square logo, legs of an arch)
+    reach = max(np.hypot(*np.array(p).T).max() for p in emblem_cs(model).to_polygons()) * radius / 8.8
+    return e + ycyl(reach + 0.5, -thick / 2 + 0.8, thick / 2 - 0.8, 0.0, seg=64)
+
+
+def on_disc(e, r, y_a, y_b, z, x=0.0):
+    """Clip a relief emblem to the flat round face it sits on, so no edge hangs past it."""
+    return e ^ ycyl(r, y_a, y_b, z, x=x, seg=48)
 
 
 def chip_base(w, label):
@@ -273,7 +336,7 @@ def pawn():
     # the cell body, flattened front and back to carry the emblem
     parts.append(sphere(R, z=hc, seg=96) ^ box(20, 9.2, 20, z0=hc - 10))
     for sy in (-1, 1):
-        parts.append(emblem_xz(MODEL, 3.9, 1.4).translate((0, sy * 4.6, hc)))
+        parts.append(on_disc(emblem_xz(MODEL, 3.9, 1.4).translate((0, sy * 4.6, hc)), 4.2, sy * 3.0, sy * 6.0, hc))
     # dendrites reaching out to other neurons
     c = np.array([0.0, 0.0, hc])
     dirs = []
@@ -283,8 +346,8 @@ def pawn():
     dirs.append(np.array([0.0, 0.0, 1.0]))
     for d in dirs:
         p0, p1 = c + d * (R - 0.8), c + d * (R + 2.6)
-        parts.append(Manifold.batch_hull([sphere(1.15, *p0, seg=16), sphere(0.7, *p1, seg=16)]))
-        parts.append(sphere(1.05, *p1, seg=16))
+        parts.append(Manifold.batch_hull([sphere(1.4, *p0, seg=16), sphere(1.0, *p1, seg=16)]))  # >= 2 mm thick
+        parts.append(sphere(1.15, *p1, seg=16))
     return union(parts)
 
 
@@ -313,7 +376,9 @@ def rook():
             y_in = sy * (s / 2 - depth)  # bottom of the recess
             cuts.append(ycyl(fan_r, y_in, sy * (s / 2 + 1), zc))
             adds.append(fan_rotor(fan_r - 0.5, y_in - sy * 0.3, sy * (s / 2 - 0.15), zc))
-            adds.append(emblem_xz(MODEL, 3.1, 1.0).translate((0, sy * (s / 2 - 0.2), zc)))
+            # the emblem sits on the fan hub (3.5 mm), clipped to it so nothing hangs over the blades
+            adds.append(on_disc(emblem_xz(MODEL, 3.1, 1.0).translate((0, sy * (s / 2 - 0.2), zc)),
+                                3.4, sy * (s / 2 - 2), sy * (s / 2 + 1), zc))
         # status LED strip
         for k in range(-3, 4):
             cuts.append(box(1.3, 1.6, 0.9, cx=k * 2.2, cy=sy * s / 2, z0=z0 + h * 0.52 - 0.45))
@@ -420,7 +485,7 @@ KNIGHT_PTS = [
     (11, -3), (10.8, 6), (10.3, 13), (10.8, 20), (11.6, 27), (10.4, 33), (8, 37.8), (5.4, 41),
     (4.6, 43.6), (3.0, 48.5), (1.2, 44.2), (-1.5, 42.8), (-4.5, 41.5), (-8, 39), (-11, 35.2),
     (-13.5, 31), (-15.8, 28.2), (-17.5, 26), (-17.8, 23.5), (-17, 21.2), (-15.5, 20), (-11.5, 17.6),
-    (-8, 15.6), (-5.8, 16.4), (-4.2, 13.5), (-4.4, 10), (-6.5, 6), (-9, 2.5), (-10, -3),
+    (-8, 15.6), (-4.2, 13.5),  # the jaw runs straight down into the throat: no low point in mid-air (-4.4, 10), (-6.5, 6), (-9, 2.5), (-10, -3),
 ]
 
 
@@ -454,7 +519,8 @@ def knight():
         parts.append(rounded_box(2.0, 2.2, 9.0, 0.5, seg=10).translate((3.0 + dx, sy * 2.6, 42.5 + zb)))
 
     # the mane is a thick cable running down the back, held by clips, into the base
-    back = [(4.4, 44.0), (6.2, 40.6), (8.8, 36.8), (11.0, 31.0), (11.8, 25.0), (11.2, 18.0), (11.0, 11.0), (11.4, 5.0), (11.6, 1.0)]
+    # the top end is buried in the head, so there is no loose cap
+    back = [(4.6, 42.0), (6.2, 40.6), (8.8, 36.8), (11.0, 31.0), (11.8, 25.0), (11.2, 18.0), (11.0, 11.0), (11.4, 5.0), (11.6, 1.0)]
     cable = [(x + dx + 0.6, 0.0, z + zb) for x, z in back]
     parts.append(tube(cable, 1.9, seg=20))
     for k in (2, 4, 6):
@@ -529,7 +595,7 @@ def bishop():
     m = m + union(adds)
     # the model emblem is the knob on top of the mitre
     tip = zs - 0.3 + 21.0
-    m = m + cyl(4.0, 1.6, z0=tip - 2.2) + emblem_xz(MODEL, 5.0, 3.6).translate((0, 0, tip + 3.2))
+    m = m + cyl(5.4, 1.6, z0=tip - 2.2) + medallion(MODEL, 5.0, 3.6).translate((0, 0, tip + 3.2))
     return m
 
 
@@ -583,17 +649,17 @@ def queen():
     for m_ in mull:
         pts = [((R(zq) + 1.4) * np.cos(np.radians(m_)), (R(zq) + 1.4) * np.sin(np.radians(m_)), z0 + zq)
                for zq in np.linspace(w1, w2, 5)]
-        adds.append(tube(pts, 0.9, seg=12))
+        adds.append(tube(pts, 1.2, seg=12))
     parts = [base, (body - union(cuts)) + union(adds)]
     zt = z0 + 61.0
     tilt = np.radians(16)
     for k in range(9):
-        sp = cyl(7.0, 1.4, 0.8, z0=-0.5, seg=20).rotate((0, 16, 0)).translate((8.4, 0, zt))
+        sp = cyl(7.0, 1.6, 1.2, z0=-0.5, seg=20).rotate((0, 16, 0)).translate((8.4, 0, zt))
         tip = rounded_box(2.8, 2.8, 2.8, 0.7, seg=10).translate((8.4 + 7 * np.sin(tilt), 0, zt + 7 * np.cos(tilt) - 1.2))
         parts.append((sp + tip).rotate((0, 0, 360 / 9 * k)))
     # the model emblem is the crown jewel
-    parts.append(cyl(5.0, 1.8, z0=zt - 1.3))
-    parts.append(emblem_xz(MODEL, 6.0, 3.4).translate((0, 0, zt + 5.2)))
+    parts.append(cyl(6.5, 1.6, z0=zt - 1.3))
+    parts.append(medallion(MODEL, 6.0, 3.4).translate((0, 0, zt + 5.2)))
     return union(parts)
 
 
@@ -636,13 +702,14 @@ def king(emblem=None):
         for la, lb in zip(nodes, nodes[1:] + [[out]]):
             for a in la:
                 for b in lb:
-                    net.append(tube([a, b], 0.75, seg=12))
+                    net.append(tube([a, b], 1.15, seg=12))
         for la in nodes:
             for a in la:
                 net.append(sphere(1.9, *a, seg=24))
+        net.append(tube([(0.0, 0.0, ct + layers[1][0]), out], 1.6, seg=16))  # spine: carries the emblem
         parts.append(union(net).rotate((0, 0, rot)))
     # output node = the model emblem, seen from every side
-    e = emblem_xz(emblem, 5.6, 3.4)
+    e = medallion(emblem, 5.6, 3.4)
     parts.append((e + e.rotate((0, 0, 90))).translate(out))
     return union(parts)
 
