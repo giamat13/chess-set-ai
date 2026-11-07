@@ -1,0 +1,246 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 368 368" width="720" height="720">
+<rect width="368" height="368" fill="#000"/>
+<rect x="24" y="24" width="40" height="40" fill="#fff"/>
+<rect x="64" y="24" width="40" height="40" fill="#000"/>
+<rect x="104" y="24" width="40" height="40" fill="#fff"/>
+<rect x="144" y="24" width="40" height="40" fill="#000"/>
+<rect x="184" y="24" width="40" height="40" fill="#fff"/>
+<rect x="224" y="24" width="40" height="40" fill="#000"/>
+<rect x="264" y="24" width="40" height="40" fill="#fff"/>
+<rect x="304" y="24" width="40" height="40" fill="#000"/>
+<rect x="24" y="64" width="40" height="40" fill="#000"/>
+<rect x="64" y="64" width="40" height="40" fill="#fff"/>
+<rect x="104" y="64" width="40" height="40" fill="#000"/>
+<rect x="144" y="64" width="40" height="40" fill="#fff"/>
+<rect x="184" y="64" width="40" height="40" fill="#000"/>
+<rect x="224" y="64" width="40" height="40" fill="#fff"/>
+<rect x="264" y="64" width="40" height="40" fill="#000"/>
+<rect x="304" y="64" width="40" height="40" fill="#fff"/>
+<rect x="24" y="104" width="40" height="40" fill="#fff"/>
+<rect x="64" y="104" width="40" height="40" fill="#000"/>
+<rect x="104" y="104" width="40" height="40" fill="#fff"/>
+<rect x="144" y="104" width="40" height="40" fill="#000"/>
+<rect x="184" y="104" width="40" height="40" fill="#fff"/>
+<rect x="224" y="104" width="40" height="40" fill="#000"/>
+<rect x="264" y="104" width="40" height="40" fill="#fff"/>
+<rect x="304" y="104" width="40" height="40" fill="#000"/>
+<rect x="24" y="144" width="40" height="40" fill="#000"/>
+<rect x="64" y="144" width="40" height="40" fill="#fff"/>
+<rect x="104" y="144" width="40" height="40" fill="#000"/>
+<rect x="144" y="144" width="40" height="40" fill="#fff"/>
+<rect x="184" y="144" width="40" height="40" fill="#000"/>
+<rect x="224" y="144" width="40" height="40" fill="#fff"/>
+<rect x="264" y="144" width="40" height="40" fill="#000"/>
+<rect x="304" y="144" width="40" height="40" fill="#fff"/>
+<rect x="24" y="184" width="40" height="40" fill="#fff"/>
+<rect x="64" y="184" width="40" height="40" fill="#000"/>
+<rect x="104" y="184" width="40" height="40" fill="#fff"/>
+<rect x="144" y="184" width="40" height="40" fill="#000"/>
+<rect x="184" y="184" width="40" height="40" fill="#fff"/>
+<rect x="224" y="184" width="40" height="40" fill="#000"/>
+<rect x="264" y="184" width="40" height="40" fill="#fff"/>
+<rect x="304" y="184" width="40" height="40" fill="#000"/>
+<rect x="24" y="224" width="40" height="40" fill="#000"/>
+<rect x="64" y="224" width="40" height="40" fill="#fff"/>
+<rect x="104" y="224" width="40" height="40" fill="#000"/>
+<rect x="144" y="224" width="40" height="40" fill="#fff"/>
+<rect x="184" y="224" width="40" height="40" fill="#000"/>
+<rect x="224" y="224" width="40" height="40" fill="#fff"/>
+<rect x="264" y="224" width="40" height="40" fill="#000"/>
+<rect x="304" y="224" width="40" height="40" fill="#fff"/>
+<rect x="24" y="264" width="40" height="40" fill="#fff"/>
+<rect x="64" y="264" width="40" height="40" fill="#000"/>
+<rect x="104" y="264" width="40" height="40" fill="#fff"/>
+<rect x="144" y="264" width="40" height="40" fill="#000"/>
+<rect x="184" y="264" width="40" height="40" fill="#fff"/>
+<rect x="224" y="264" width="40" height="40" fill="#000"/>
+<rect x="264" y="264" width="40" height="40" fill="#fff"/>
+<rect x="304" y="264" width="40" height="40" fill="#000"/>
+<rect x="24" y="304" width="40" height="40" fill="#000"/>
+<rect x="64" y="304" width="40" height="40" fill="#fff"/>
+<rect x="104" y="304" width="40" height="40" fill="#000"/>
+<rect x="144" y="304" width="40" height="40" fill="#fff"/>
+<rect x="184" y="304" width="40" height="40" fill="#000"/>
+<rect x="224" y="304" width="40" height="40" fill="#fff"/>
+<rect x="264" y="304" width="40" height="40" fill="#000"/>
+<rect x="304" y="304" width="40" height="40" fill="#fff"/>
+<polyline points="70.0,44.0 78.0,44.0 88.0,54.0 98.0,54.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="70.0" cy="44.0" r="2.4" fill="#fff"/>
+<circle cx="98.0" cy="54.0" r="2.4" fill="#fff"/>
+<polyline points="150.0,44.0 170.0,44.0 160.0,54.0 178.0,54.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="150.0" cy="44.0" r="2.4" fill="#fff"/>
+<circle cx="178.0" cy="54.0" r="2.4" fill="#fff"/>
+<polyline points="230.0,44.0 250.0,44.0 240.0,34.0 258.0,34.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="230.0" cy="44.0" r="2.4" fill="#fff"/>
+<circle cx="258.0" cy="34.0" r="2.4" fill="#fff"/>
+<polyline points="310.0,44.0 330.0,44.0 320.0,54.0 338.0,54.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="310.0" cy="44.0" r="2.4" fill="#fff"/>
+<circle cx="338.0" cy="54.0" r="2.4" fill="#fff"/>
+<polyline points="30.0,84.0 38.0,84.0 48.0,74.0 58.0,74.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="30.0" cy="84.0" r="2.4" fill="#fff"/>
+<circle cx="58.0" cy="74.0" r="2.4" fill="#fff"/>
+<polyline points="110.0,84.0 118.0,84.0 128.0,74.0 138.0,74.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="110.0" cy="84.0" r="2.4" fill="#fff"/>
+<circle cx="138.0" cy="74.0" r="2.4" fill="#fff"/>
+<polyline points="190.0,84.0 198.0,84.0 208.0,74.0 218.0,74.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="190.0" cy="84.0" r="2.4" fill="#fff"/>
+<circle cx="218.0" cy="74.0" r="2.4" fill="#fff"/>
+<polyline points="270.0,84.0 278.0,84.0 288.0,74.0 298.0,74.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="270.0" cy="84.0" r="2.4" fill="#fff"/>
+<circle cx="298.0" cy="74.0" r="2.4" fill="#fff"/>
+<polyline points="70.0,124.0 78.0,124.0 88.0,134.0 98.0,134.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="70.0" cy="124.0" r="2.4" fill="#fff"/>
+<circle cx="98.0" cy="134.0" r="2.4" fill="#fff"/>
+<polyline points="150.0,124.0 170.0,124.0 160.0,134.0 178.0,134.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="150.0" cy="124.0" r="2.4" fill="#fff"/>
+<circle cx="178.0" cy="134.0" r="2.4" fill="#fff"/>
+<polyline points="230.0,124.0 238.0,124.0 248.0,114.0 258.0,114.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="230.0" cy="124.0" r="2.4" fill="#fff"/>
+<circle cx="258.0" cy="114.0" r="2.4" fill="#fff"/>
+<polyline points="310.0,124.0 330.0,124.0 320.0,134.0 338.0,134.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="310.0" cy="124.0" r="2.4" fill="#fff"/>
+<circle cx="338.0" cy="134.0" r="2.4" fill="#fff"/>
+<polyline points="30.0,164.0 38.0,164.0 48.0,154.0 58.0,154.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="30.0" cy="164.0" r="2.4" fill="#fff"/>
+<circle cx="58.0" cy="154.0" r="2.4" fill="#fff"/>
+<polyline points="110.0,164.0 118.0,164.0 128.0,154.0 138.0,154.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="110.0" cy="164.0" r="2.4" fill="#fff"/>
+<circle cx="138.0" cy="154.0" r="2.4" fill="#fff"/>
+<polyline points="190.0,164.0 210.0,164.0 200.0,174.0 218.0,174.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="190.0" cy="164.0" r="2.4" fill="#fff"/>
+<circle cx="218.0" cy="174.0" r="2.4" fill="#fff"/>
+<polyline points="270.0,164.0 278.0,164.0 288.0,154.0 298.0,154.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="270.0" cy="164.0" r="2.4" fill="#fff"/>
+<circle cx="298.0" cy="154.0" r="2.4" fill="#fff"/>
+<polyline points="70.0,204.0 90.0,204.0 80.0,194.0 98.0,194.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="70.0" cy="204.0" r="2.4" fill="#fff"/>
+<circle cx="98.0" cy="194.0" r="2.4" fill="#fff"/>
+<polyline points="150.0,204.0 158.0,204.0 168.0,214.0 178.0,214.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="150.0" cy="204.0" r="2.4" fill="#fff"/>
+<circle cx="178.0" cy="214.0" r="2.4" fill="#fff"/>
+<polyline points="230.0,204.0 250.0,204.0 240.0,214.0 258.0,214.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="230.0" cy="204.0" r="2.4" fill="#fff"/>
+<circle cx="258.0" cy="214.0" r="2.4" fill="#fff"/>
+<polyline points="310.0,204.0 330.0,204.0 320.0,194.0 338.0,194.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="310.0" cy="204.0" r="2.4" fill="#fff"/>
+<circle cx="338.0" cy="194.0" r="2.4" fill="#fff"/>
+<polyline points="30.0,244.0 50.0,244.0 40.0,254.0 58.0,254.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="30.0" cy="244.0" r="2.4" fill="#fff"/>
+<circle cx="58.0" cy="254.0" r="2.4" fill="#fff"/>
+<polyline points="110.0,244.0 130.0,244.0 120.0,254.0 138.0,254.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="110.0" cy="244.0" r="2.4" fill="#fff"/>
+<circle cx="138.0" cy="254.0" r="2.4" fill="#fff"/>
+<polyline points="190.0,244.0 210.0,244.0 200.0,254.0 218.0,254.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="190.0" cy="244.0" r="2.4" fill="#fff"/>
+<circle cx="218.0" cy="254.0" r="2.4" fill="#fff"/>
+<polyline points="270.0,244.0 290.0,244.0 280.0,254.0 298.0,254.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="270.0" cy="244.0" r="2.4" fill="#fff"/>
+<circle cx="298.0" cy="254.0" r="2.4" fill="#fff"/>
+<polyline points="70.0,284.0 78.0,284.0 88.0,274.0 98.0,274.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="70.0" cy="284.0" r="2.4" fill="#fff"/>
+<circle cx="98.0" cy="274.0" r="2.4" fill="#fff"/>
+<polyline points="150.0,284.0 158.0,284.0 168.0,294.0 178.0,294.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="150.0" cy="284.0" r="2.4" fill="#fff"/>
+<circle cx="178.0" cy="294.0" r="2.4" fill="#fff"/>
+<polyline points="230.0,284.0 238.0,284.0 248.0,274.0 258.0,274.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="230.0" cy="284.0" r="2.4" fill="#fff"/>
+<circle cx="258.0" cy="274.0" r="2.4" fill="#fff"/>
+<polyline points="310.0,284.0 330.0,284.0 320.0,294.0 338.0,294.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="310.0" cy="284.0" r="2.4" fill="#fff"/>
+<circle cx="338.0" cy="294.0" r="2.4" fill="#fff"/>
+<polyline points="30.0,324.0 38.0,324.0 48.0,334.0 58.0,334.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="30.0" cy="324.0" r="2.4" fill="#fff"/>
+<circle cx="58.0" cy="334.0" r="2.4" fill="#fff"/>
+<polyline points="110.0,324.0 118.0,324.0 128.0,314.0 138.0,314.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="110.0" cy="324.0" r="2.4" fill="#fff"/>
+<circle cx="138.0" cy="314.0" r="2.4" fill="#fff"/>
+<polyline points="190.0,324.0 198.0,324.0 208.0,314.0 218.0,314.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="190.0" cy="324.0" r="2.4" fill="#fff"/>
+<circle cx="218.0" cy="314.0" r="2.4" fill="#fff"/>
+<polyline points="270.0,324.0 278.0,324.0 288.0,334.0 298.0,334.0" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="270.0" cy="324.0" r="2.4" fill="#fff"/>
+<circle cx="298.0" cy="334.0" r="2.4" fill="#fff"/>
+<rect x="26.0" y="1.0" width="4" height="7" fill="#fff"/>
+<rect x="26.0" y="360.0" width="4" height="7" fill="#fff"/>
+<rect x="1.0" y="26.0" width="7" height="4" fill="#fff"/>
+<rect x="360.0" y="26.0" width="7" height="4" fill="#fff"/>
+<rect x="46.8" y="1.0" width="4" height="7" fill="#fff"/>
+<rect x="46.8" y="360.0" width="4" height="7" fill="#fff"/>
+<rect x="1.0" y="46.8" width="7" height="4" fill="#fff"/>
+<rect x="360.0" y="46.8" width="7" height="4" fill="#fff"/>
+<rect x="67.6" y="1.0" width="4" height="7" fill="#fff"/>
+<rect x="67.6" y="360.0" width="4" height="7" fill="#fff"/>
+<rect x="1.0" y="67.6" width="7" height="4" fill="#fff"/>
+<rect x="360.0" y="67.6" width="7" height="4" fill="#fff"/>
+<rect x="88.4" y="1.0" width="4" height="7" fill="#fff"/>
+<rect x="88.4" y="360.0" width="4" height="7" fill="#fff"/>
+<rect x="1.0" y="88.4" width="7" height="4" fill="#fff"/>
+<rect x="360.0" y="88.4" width="7" height="4" fill="#fff"/>
+<rect x="109.2" y="1.0" width="4" height="7" fill="#fff"/>
+<rect x="109.2" y="360.0" width="4" height="7" fill="#fff"/>
+<rect x="1.0" y="109.2" width="7" height="4" fill="#fff"/>
+<rect x="360.0" y="109.2" width="7" height="4" fill="#fff"/>
+<rect x="130.0" y="1.0" width="4" height="7" fill="#fff"/>
+<rect x="130.0" y="360.0" width="4" height="7" fill="#fff"/>
+<rect x="1.0" y="130.0" width="7" height="4" fill="#fff"/>
+<rect x="360.0" y="130.0" width="7" height="4" fill="#fff"/>
+<rect x="150.8" y="1.0" width="4" height="7" fill="#fff"/>
+<rect x="150.8" y="360.0" width="4" height="7" fill="#fff"/>
+<rect x="1.0" y="150.8" width="7" height="4" fill="#fff"/>
+<rect x="360.0" y="150.8" width="7" height="4" fill="#fff"/>
+<rect x="171.6" y="1.0" width="4" height="7" fill="#fff"/>
+<rect x="171.6" y="360.0" width="4" height="7" fill="#fff"/>
+<rect x="1.0" y="171.6" width="7" height="4" fill="#fff"/>
+<rect x="360.0" y="171.6" width="7" height="4" fill="#fff"/>
+<rect x="192.4" y="1.0" width="4" height="7" fill="#fff"/>
+<rect x="192.4" y="360.0" width="4" height="7" fill="#fff"/>
+<rect x="1.0" y="192.4" width="7" height="4" fill="#fff"/>
+<rect x="360.0" y="192.4" width="7" height="4" fill="#fff"/>
+<rect x="213.2" y="1.0" width="4" height="7" fill="#fff"/>
+<rect x="213.2" y="360.0" width="4" height="7" fill="#fff"/>
+<rect x="1.0" y="213.2" width="7" height="4" fill="#fff"/>
+<rect x="360.0" y="213.2" width="7" height="4" fill="#fff"/>
+<rect x="234.0" y="1.0" width="4" height="7" fill="#fff"/>
+<rect x="234.0" y="360.0" width="4" height="7" fill="#fff"/>
+<rect x="1.0" y="234.0" width="7" height="4" fill="#fff"/>
+<rect x="360.0" y="234.0" width="7" height="4" fill="#fff"/>
+<rect x="254.8" y="1.0" width="4" height="7" fill="#fff"/>
+<rect x="254.8" y="360.0" width="4" height="7" fill="#fff"/>
+<rect x="1.0" y="254.8" width="7" height="4" fill="#fff"/>
+<rect x="360.0" y="254.8" width="7" height="4" fill="#fff"/>
+<rect x="275.6" y="1.0" width="4" height="7" fill="#fff"/>
+<rect x="275.6" y="360.0" width="4" height="7" fill="#fff"/>
+<rect x="1.0" y="275.6" width="7" height="4" fill="#fff"/>
+<rect x="360.0" y="275.6" width="7" height="4" fill="#fff"/>
+<rect x="296.4" y="1.0" width="4" height="7" fill="#fff"/>
+<rect x="296.4" y="360.0" width="4" height="7" fill="#fff"/>
+<rect x="1.0" y="296.4" width="7" height="4" fill="#fff"/>
+<rect x="360.0" y="296.4" width="7" height="4" fill="#fff"/>
+<rect x="317.2" y="1.0" width="4" height="7" fill="#fff"/>
+<rect x="317.2" y="360.0" width="4" height="7" fill="#fff"/>
+<rect x="1.0" y="317.2" width="7" height="4" fill="#fff"/>
+<rect x="360.0" y="317.2" width="7" height="4" fill="#fff"/>
+<rect x="338.0" y="1.0" width="4" height="7" fill="#fff"/>
+<rect x="338.0" y="360.0" width="4" height="7" fill="#fff"/>
+<rect x="1.0" y="338.0" width="7" height="4" fill="#fff"/>
+<rect x="360.0" y="338.0" width="7" height="4" fill="#fff"/>
+<circle cx="9" cy="9" r="4" fill="#000" stroke="#fff"/><path d="M6.5 9 H11.5" stroke="#fff"/>
+<circle cx="359" cy="9" r="4" fill="#000" stroke="#fff"/><path d="M356.5 9 H361.5" stroke="#fff"/>
+<circle cx="9" cy="359" r="4" fill="#000" stroke="#fff"/><path d="M6.5 359 H11.5" stroke="#fff"/>
+<circle cx="359" cy="359" r="4" fill="#000" stroke="#fff"/><path d="M356.5 359 H361.5" stroke="#fff"/>
+<text x="44.0" y="358" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">a</text>
+<text x="15" y="47.0" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">8</text>
+<text x="84.0" y="358" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">b</text>
+<text x="15" y="87.0" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">7</text>
+<text x="124.0" y="358" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">c</text>
+<text x="15" y="127.0" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">6</text>
+<text x="164.0" y="358" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">d</text>
+<text x="15" y="167.0" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">5</text>
+<text x="204.0" y="358" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">e</text>
+<text x="15" y="207.0" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">4</text>
+<text x="244.0" y="358" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">f</text>
+<text x="15" y="247.0" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">3</text>
+<text x="284.0" y="358" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">g</text>
+<text x="15" y="287.0" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">2</text>
+<text x="324.0" y="358" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">h</text>
+<text x="15" y="327.0" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">1</text></svg>

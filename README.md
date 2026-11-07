@@ -60,6 +60,20 @@ Every STL is checked by `src/print_check.py`: it fits the 256 mm build volume, h
 - PLA or PETG, 0.16 or 0.2 mm layers, 3 walls, 15% gyroid infill.
 - Pieces are stable: they need 33° to 50° of tilt before they tip over (a normal chess piece needs about 15° to 25°).
 
+## The board
+
+![Board](images/board_preview.png)
+
+A "neural network" board: white nodes on the dark squares, linked diagonally. The columns are the five effort levels (LOW to MAX) and three permission modes (MANUAL, ACCEPT EDITS, BYPASS PERMS). The rows show the context filling up from 12% to 87%, then AUTO COMPACT.
+
+- Regular size: 50 mm squares, 460 x 460 x 6 mm in all, made of 4 quarters (4 x 4 squares each) that fit the P1S.
+- Joint: dovetail tabs in the lower 3.5 mm only. The top 2.5 mm meets in a straight line on a square edge, so the seam is clean, and the quarters above rest on the tabs. Clearance 0.15 mm per side.
+- Print `board_TL` and `board_BR` face up, and `board_TR` and `board_BL` face down (the STLs are already oriented). None needs supports.
+- Two colours (AMS): load `color/board_<q>_white.stl` and `board_<q>_black.stl` together as one object. The top 0.6 mm is split into black and white.
+- Assembly: lay down TL and BR, then drop in TR and BL from above.
+- Fit test first: `stl/board/test/` has one tab and sockets at 0.10, 0.15 and 0.20 mm (1, 2 or 3 notches). Rebuild with another clearance using `python src/build_board.py 0.2`.
+- `boards/proposals/` has the 2D proposals that came before it (`python src/board_proposals.py`).
+
 ## Add your own version
 
 Drop a logo SVG into `assets/` and run the build. The file name becomes the version name: `assets/mistral.svg` makes `stl/mistral/`.

@@ -1,0 +1,601 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 368 368" width="720" height="720">
+<rect width="368" height="368" fill="#000"/>
+<rect x="24" y="24" width="40" height="40" fill="#fff"/>
+<rect x="64" y="24" width="40" height="40" fill="#000"/>
+<rect x="104" y="24" width="40" height="40" fill="#fff"/>
+<rect x="144" y="24" width="40" height="40" fill="#000"/>
+<rect x="184" y="24" width="40" height="40" fill="#fff"/>
+<rect x="224" y="24" width="40" height="40" fill="#000"/>
+<rect x="264" y="24" width="40" height="40" fill="#fff"/>
+<rect x="304" y="24" width="40" height="40" fill="#000"/>
+<rect x="24" y="64" width="40" height="40" fill="#000"/>
+<rect x="64" y="64" width="40" height="40" fill="#fff"/>
+<rect x="104" y="64" width="40" height="40" fill="#000"/>
+<rect x="144" y="64" width="40" height="40" fill="#fff"/>
+<rect x="184" y="64" width="40" height="40" fill="#000"/>
+<rect x="224" y="64" width="40" height="40" fill="#fff"/>
+<rect x="264" y="64" width="40" height="40" fill="#000"/>
+<rect x="304" y="64" width="40" height="40" fill="#fff"/>
+<rect x="24" y="104" width="40" height="40" fill="#fff"/>
+<rect x="64" y="104" width="40" height="40" fill="#000"/>
+<rect x="104" y="104" width="40" height="40" fill="#fff"/>
+<rect x="144" y="104" width="40" height="40" fill="#000"/>
+<rect x="184" y="104" width="40" height="40" fill="#fff"/>
+<rect x="224" y="104" width="40" height="40" fill="#000"/>
+<rect x="264" y="104" width="40" height="40" fill="#fff"/>
+<rect x="304" y="104" width="40" height="40" fill="#000"/>
+<rect x="24" y="144" width="40" height="40" fill="#000"/>
+<rect x="64" y="144" width="40" height="40" fill="#fff"/>
+<rect x="104" y="144" width="40" height="40" fill="#000"/>
+<rect x="144" y="144" width="40" height="40" fill="#fff"/>
+<rect x="184" y="144" width="40" height="40" fill="#000"/>
+<rect x="224" y="144" width="40" height="40" fill="#fff"/>
+<rect x="264" y="144" width="40" height="40" fill="#000"/>
+<rect x="304" y="144" width="40" height="40" fill="#fff"/>
+<rect x="24" y="184" width="40" height="40" fill="#fff"/>
+<rect x="64" y="184" width="40" height="40" fill="#000"/>
+<rect x="104" y="184" width="40" height="40" fill="#fff"/>
+<rect x="144" y="184" width="40" height="40" fill="#000"/>
+<rect x="184" y="184" width="40" height="40" fill="#fff"/>
+<rect x="224" y="184" width="40" height="40" fill="#000"/>
+<rect x="264" y="184" width="40" height="40" fill="#fff"/>
+<rect x="304" y="184" width="40" height="40" fill="#000"/>
+<rect x="24" y="224" width="40" height="40" fill="#000"/>
+<rect x="64" y="224" width="40" height="40" fill="#fff"/>
+<rect x="104" y="224" width="40" height="40" fill="#000"/>
+<rect x="144" y="224" width="40" height="40" fill="#fff"/>
+<rect x="184" y="224" width="40" height="40" fill="#000"/>
+<rect x="224" y="224" width="40" height="40" fill="#fff"/>
+<rect x="264" y="224" width="40" height="40" fill="#000"/>
+<rect x="304" y="224" width="40" height="40" fill="#fff"/>
+<rect x="24" y="264" width="40" height="40" fill="#fff"/>
+<rect x="64" y="264" width="40" height="40" fill="#000"/>
+<rect x="104" y="264" width="40" height="40" fill="#fff"/>
+<rect x="144" y="264" width="40" height="40" fill="#000"/>
+<rect x="184" y="264" width="40" height="40" fill="#fff"/>
+<rect x="224" y="264" width="40" height="40" fill="#000"/>
+<rect x="264" y="264" width="40" height="40" fill="#fff"/>
+<rect x="304" y="264" width="40" height="40" fill="#000"/>
+<rect x="24" y="304" width="40" height="40" fill="#000"/>
+<rect x="64" y="304" width="40" height="40" fill="#fff"/>
+<rect x="104" y="304" width="40" height="40" fill="#000"/>
+<rect x="144" y="304" width="40" height="40" fill="#fff"/>
+<rect x="184" y="304" width="40" height="40" fill="#000"/>
+<rect x="224" y="304" width="40" height="40" fill="#fff"/>
+<rect x="264" y="304" width="40" height="40" fill="#000"/>
+<rect x="304" y="304" width="40" height="40" fill="#fff"/>
+<circle cx="69" cy="29" r="4.68" fill="#fff"/>
+<circle cx="69" cy="39" r="4.68" fill="#fff"/>
+<circle cx="69" cy="49" r="4.68" fill="#fff"/>
+<circle cx="69" cy="59" r="4.68" fill="#fff"/>
+<circle cx="79" cy="29" r="4.68" fill="#fff"/>
+<circle cx="79" cy="39" r="4.68" fill="#fff"/>
+<circle cx="79" cy="49" r="4.68" fill="#fff"/>
+<circle cx="79" cy="59" r="4.68" fill="#fff"/>
+<circle cx="89" cy="29" r="4.68" fill="#fff"/>
+<circle cx="89" cy="39" r="4.68" fill="#fff"/>
+<circle cx="89" cy="49" r="4.68" fill="#fff"/>
+<circle cx="89" cy="59" r="4.68" fill="#fff"/>
+<circle cx="99" cy="29" r="4.68" fill="#fff"/>
+<circle cx="99" cy="39" r="4.68" fill="#fff"/>
+<circle cx="99" cy="49" r="4.68" fill="#fff"/>
+<circle cx="99" cy="59" r="4.68" fill="#fff"/>
+<circle cx="149" cy="29" r="2.36" fill="#fff"/>
+<circle cx="149" cy="39" r="2.36" fill="#fff"/>
+<circle cx="149" cy="49" r="2.36" fill="#fff"/>
+<circle cx="149" cy="59" r="2.36" fill="#fff"/>
+<circle cx="159" cy="29" r="2.36" fill="#fff"/>
+<circle cx="159" cy="39" r="2.36" fill="#fff"/>
+<circle cx="159" cy="49" r="2.36" fill="#fff"/>
+<circle cx="159" cy="59" r="2.36" fill="#fff"/>
+<circle cx="169" cy="29" r="2.36" fill="#fff"/>
+<circle cx="169" cy="39" r="2.36" fill="#fff"/>
+<circle cx="169" cy="49" r="2.36" fill="#fff"/>
+<circle cx="169" cy="59" r="2.36" fill="#fff"/>
+<circle cx="179" cy="29" r="2.36" fill="#fff"/>
+<circle cx="179" cy="39" r="2.36" fill="#fff"/>
+<circle cx="179" cy="49" r="2.36" fill="#fff"/>
+<circle cx="179" cy="59" r="2.36" fill="#fff"/>
+<circle cx="229" cy="29" r="2.49" fill="#fff"/>
+<circle cx="229" cy="39" r="2.49" fill="#fff"/>
+<circle cx="229" cy="49" r="2.49" fill="#fff"/>
+<circle cx="229" cy="59" r="2.49" fill="#fff"/>
+<circle cx="239" cy="29" r="2.49" fill="#fff"/>
+<circle cx="239" cy="39" r="2.49" fill="#fff"/>
+<circle cx="239" cy="49" r="2.49" fill="#fff"/>
+<circle cx="239" cy="59" r="2.49" fill="#fff"/>
+<circle cx="249" cy="29" r="2.49" fill="#fff"/>
+<circle cx="249" cy="39" r="2.49" fill="#fff"/>
+<circle cx="249" cy="49" r="2.49" fill="#fff"/>
+<circle cx="249" cy="59" r="2.49" fill="#fff"/>
+<circle cx="259" cy="29" r="2.49" fill="#fff"/>
+<circle cx="259" cy="39" r="2.49" fill="#fff"/>
+<circle cx="259" cy="49" r="2.49" fill="#fff"/>
+<circle cx="259" cy="59" r="2.49" fill="#fff"/>
+<circle cx="309" cy="29" r="2.05" fill="#fff"/>
+<circle cx="309" cy="39" r="2.05" fill="#fff"/>
+<circle cx="309" cy="49" r="2.05" fill="#fff"/>
+<circle cx="309" cy="59" r="2.05" fill="#fff"/>
+<circle cx="319" cy="29" r="2.05" fill="#fff"/>
+<circle cx="319" cy="39" r="2.05" fill="#fff"/>
+<circle cx="319" cy="49" r="2.05" fill="#fff"/>
+<circle cx="319" cy="59" r="2.05" fill="#fff"/>
+<circle cx="329" cy="29" r="2.05" fill="#fff"/>
+<circle cx="329" cy="39" r="2.05" fill="#fff"/>
+<circle cx="329" cy="49" r="2.05" fill="#fff"/>
+<circle cx="329" cy="59" r="2.05" fill="#fff"/>
+<circle cx="339" cy="29" r="2.05" fill="#fff"/>
+<circle cx="339" cy="39" r="2.05" fill="#fff"/>
+<circle cx="339" cy="49" r="2.05" fill="#fff"/>
+<circle cx="339" cy="59" r="2.05" fill="#fff"/>
+<circle cx="29" cy="69" r="3.85" fill="#fff"/>
+<circle cx="29" cy="79" r="3.85" fill="#fff"/>
+<circle cx="29" cy="89" r="3.85" fill="#fff"/>
+<circle cx="29" cy="99" r="3.85" fill="#fff"/>
+<circle cx="39" cy="69" r="3.85" fill="#fff"/>
+<circle cx="39" cy="79" r="3.85" fill="#fff"/>
+<circle cx="39" cy="89" r="3.85" fill="#fff"/>
+<circle cx="39" cy="99" r="3.85" fill="#fff"/>
+<circle cx="49" cy="69" r="3.85" fill="#fff"/>
+<circle cx="49" cy="79" r="3.85" fill="#fff"/>
+<circle cx="49" cy="89" r="3.85" fill="#fff"/>
+<circle cx="49" cy="99" r="3.85" fill="#fff"/>
+<circle cx="59" cy="69" r="3.85" fill="#fff"/>
+<circle cx="59" cy="79" r="3.85" fill="#fff"/>
+<circle cx="59" cy="89" r="3.85" fill="#fff"/>
+<circle cx="59" cy="99" r="3.85" fill="#fff"/>
+<circle cx="109" cy="69" r="3.54" fill="#fff"/>
+<circle cx="109" cy="79" r="3.54" fill="#fff"/>
+<circle cx="109" cy="89" r="3.54" fill="#fff"/>
+<circle cx="109" cy="99" r="3.54" fill="#fff"/>
+<circle cx="119" cy="69" r="3.54" fill="#fff"/>
+<circle cx="119" cy="79" r="3.54" fill="#fff"/>
+<circle cx="119" cy="89" r="3.54" fill="#fff"/>
+<circle cx="119" cy="99" r="3.54" fill="#fff"/>
+<circle cx="129" cy="69" r="3.54" fill="#fff"/>
+<circle cx="129" cy="79" r="3.54" fill="#fff"/>
+<circle cx="129" cy="89" r="3.54" fill="#fff"/>
+<circle cx="129" cy="99" r="3.54" fill="#fff"/>
+<circle cx="139" cy="69" r="3.54" fill="#fff"/>
+<circle cx="139" cy="79" r="3.54" fill="#fff"/>
+<circle cx="139" cy="89" r="3.54" fill="#fff"/>
+<circle cx="139" cy="99" r="3.54" fill="#fff"/>
+<circle cx="189" cy="69" r="3.23" fill="#fff"/>
+<circle cx="189" cy="79" r="3.23" fill="#fff"/>
+<circle cx="189" cy="89" r="3.23" fill="#fff"/>
+<circle cx="189" cy="99" r="3.23" fill="#fff"/>
+<circle cx="199" cy="69" r="3.23" fill="#fff"/>
+<circle cx="199" cy="79" r="3.23" fill="#fff"/>
+<circle cx="199" cy="89" r="3.23" fill="#fff"/>
+<circle cx="199" cy="99" r="3.23" fill="#fff"/>
+<circle cx="209" cy="69" r="3.23" fill="#fff"/>
+<circle cx="209" cy="79" r="3.23" fill="#fff"/>
+<circle cx="209" cy="89" r="3.23" fill="#fff"/>
+<circle cx="209" cy="99" r="3.23" fill="#fff"/>
+<circle cx="219" cy="69" r="3.23" fill="#fff"/>
+<circle cx="219" cy="79" r="3.23" fill="#fff"/>
+<circle cx="219" cy="89" r="3.23" fill="#fff"/>
+<circle cx="219" cy="99" r="3.23" fill="#fff"/>
+<circle cx="269" cy="69" r="3.82" fill="#fff"/>
+<circle cx="269" cy="79" r="3.82" fill="#fff"/>
+<circle cx="269" cy="89" r="3.82" fill="#fff"/>
+<circle cx="269" cy="99" r="3.82" fill="#fff"/>
+<circle cx="279" cy="69" r="3.82" fill="#fff"/>
+<circle cx="279" cy="79" r="3.82" fill="#fff"/>
+<circle cx="279" cy="89" r="3.82" fill="#fff"/>
+<circle cx="279" cy="99" r="3.82" fill="#fff"/>
+<circle cx="289" cy="69" r="3.82" fill="#fff"/>
+<circle cx="289" cy="79" r="3.82" fill="#fff"/>
+<circle cx="289" cy="89" r="3.82" fill="#fff"/>
+<circle cx="289" cy="99" r="3.82" fill="#fff"/>
+<circle cx="299" cy="69" r="3.82" fill="#fff"/>
+<circle cx="299" cy="79" r="3.82" fill="#fff"/>
+<circle cx="299" cy="89" r="3.82" fill="#fff"/>
+<circle cx="299" cy="99" r="3.82" fill="#fff"/>
+<circle cx="69" cy="109" r="2.91" fill="#fff"/>
+<circle cx="69" cy="119" r="2.91" fill="#fff"/>
+<circle cx="69" cy="129" r="2.91" fill="#fff"/>
+<circle cx="69" cy="139" r="2.91" fill="#fff"/>
+<circle cx="79" cy="109" r="2.91" fill="#fff"/>
+<circle cx="79" cy="119" r="2.91" fill="#fff"/>
+<circle cx="79" cy="129" r="2.91" fill="#fff"/>
+<circle cx="79" cy="139" r="2.91" fill="#fff"/>
+<circle cx="89" cy="109" r="2.91" fill="#fff"/>
+<circle cx="89" cy="119" r="2.91" fill="#fff"/>
+<circle cx="89" cy="129" r="2.91" fill="#fff"/>
+<circle cx="89" cy="139" r="2.91" fill="#fff"/>
+<circle cx="99" cy="109" r="2.91" fill="#fff"/>
+<circle cx="99" cy="119" r="2.91" fill="#fff"/>
+<circle cx="99" cy="129" r="2.91" fill="#fff"/>
+<circle cx="99" cy="139" r="2.91" fill="#fff"/>
+<circle cx="149" cy="109" r="2.39" fill="#fff"/>
+<circle cx="149" cy="119" r="2.39" fill="#fff"/>
+<circle cx="149" cy="129" r="2.39" fill="#fff"/>
+<circle cx="149" cy="139" r="2.39" fill="#fff"/>
+<circle cx="159" cy="109" r="2.39" fill="#fff"/>
+<circle cx="159" cy="119" r="2.39" fill="#fff"/>
+<circle cx="159" cy="129" r="2.39" fill="#fff"/>
+<circle cx="159" cy="139" r="2.39" fill="#fff"/>
+<circle cx="169" cy="109" r="2.39" fill="#fff"/>
+<circle cx="169" cy="119" r="2.39" fill="#fff"/>
+<circle cx="169" cy="129" r="2.39" fill="#fff"/>
+<circle cx="169" cy="139" r="2.39" fill="#fff"/>
+<circle cx="179" cy="109" r="2.39" fill="#fff"/>
+<circle cx="179" cy="119" r="2.39" fill="#fff"/>
+<circle cx="179" cy="129" r="2.39" fill="#fff"/>
+<circle cx="179" cy="139" r="2.39" fill="#fff"/>
+<circle cx="229" cy="109" r="4.78" fill="#fff"/>
+<circle cx="229" cy="119" r="4.78" fill="#fff"/>
+<circle cx="229" cy="129" r="4.78" fill="#fff"/>
+<circle cx="229" cy="139" r="4.78" fill="#fff"/>
+<circle cx="239" cy="109" r="4.78" fill="#fff"/>
+<circle cx="239" cy="119" r="4.78" fill="#fff"/>
+<circle cx="239" cy="129" r="4.78" fill="#fff"/>
+<circle cx="239" cy="139" r="4.78" fill="#fff"/>
+<circle cx="249" cy="109" r="4.78" fill="#fff"/>
+<circle cx="249" cy="119" r="4.78" fill="#fff"/>
+<circle cx="249" cy="129" r="4.78" fill="#fff"/>
+<circle cx="249" cy="139" r="4.78" fill="#fff"/>
+<circle cx="259" cy="109" r="4.78" fill="#fff"/>
+<circle cx="259" cy="119" r="4.78" fill="#fff"/>
+<circle cx="259" cy="129" r="4.78" fill="#fff"/>
+<circle cx="259" cy="139" r="4.78" fill="#fff"/>
+<circle cx="309" cy="109" r="2.64" fill="#fff"/>
+<circle cx="309" cy="119" r="2.64" fill="#fff"/>
+<circle cx="309" cy="129" r="2.64" fill="#fff"/>
+<circle cx="309" cy="139" r="2.64" fill="#fff"/>
+<circle cx="319" cy="109" r="2.64" fill="#fff"/>
+<circle cx="319" cy="119" r="2.64" fill="#fff"/>
+<circle cx="319" cy="129" r="2.64" fill="#fff"/>
+<circle cx="319" cy="139" r="2.64" fill="#fff"/>
+<circle cx="329" cy="109" r="2.64" fill="#fff"/>
+<circle cx="329" cy="119" r="2.64" fill="#fff"/>
+<circle cx="329" cy="129" r="2.64" fill="#fff"/>
+<circle cx="329" cy="139" r="2.64" fill="#fff"/>
+<circle cx="339" cy="109" r="2.64" fill="#fff"/>
+<circle cx="339" cy="119" r="2.64" fill="#fff"/>
+<circle cx="339" cy="129" r="2.64" fill="#fff"/>
+<circle cx="339" cy="139" r="2.64" fill="#fff"/>
+<circle cx="29" cy="149" r="2.57" fill="#fff"/>
+<circle cx="29" cy="159" r="2.57" fill="#fff"/>
+<circle cx="29" cy="169" r="2.57" fill="#fff"/>
+<circle cx="29" cy="179" r="2.57" fill="#fff"/>
+<circle cx="39" cy="149" r="2.57" fill="#fff"/>
+<circle cx="39" cy="159" r="2.57" fill="#fff"/>
+<circle cx="39" cy="169" r="2.57" fill="#fff"/>
+<circle cx="39" cy="179" r="2.57" fill="#fff"/>
+<circle cx="49" cy="149" r="2.57" fill="#fff"/>
+<circle cx="49" cy="159" r="2.57" fill="#fff"/>
+<circle cx="49" cy="169" r="2.57" fill="#fff"/>
+<circle cx="49" cy="179" r="2.57" fill="#fff"/>
+<circle cx="59" cy="149" r="2.57" fill="#fff"/>
+<circle cx="59" cy="159" r="2.57" fill="#fff"/>
+<circle cx="59" cy="169" r="2.57" fill="#fff"/>
+<circle cx="59" cy="179" r="2.57" fill="#fff"/>
+<circle cx="109" cy="149" r="0.81" fill="#fff"/>
+<circle cx="109" cy="159" r="0.81" fill="#fff"/>
+<circle cx="109" cy="169" r="0.81" fill="#fff"/>
+<circle cx="109" cy="179" r="0.81" fill="#fff"/>
+<circle cx="119" cy="149" r="0.81" fill="#fff"/>
+<circle cx="119" cy="159" r="0.81" fill="#fff"/>
+<circle cx="119" cy="169" r="0.81" fill="#fff"/>
+<circle cx="119" cy="179" r="0.81" fill="#fff"/>
+<circle cx="129" cy="149" r="0.81" fill="#fff"/>
+<circle cx="129" cy="159" r="0.81" fill="#fff"/>
+<circle cx="129" cy="169" r="0.81" fill="#fff"/>
+<circle cx="129" cy="179" r="0.81" fill="#fff"/>
+<circle cx="139" cy="149" r="0.81" fill="#fff"/>
+<circle cx="139" cy="159" r="0.81" fill="#fff"/>
+<circle cx="139" cy="169" r="0.81" fill="#fff"/>
+<circle cx="139" cy="179" r="0.81" fill="#fff"/>
+<circle cx="189" cy="149" r="3.46" fill="#fff"/>
+<circle cx="189" cy="159" r="3.46" fill="#fff"/>
+<circle cx="189" cy="169" r="3.46" fill="#fff"/>
+<circle cx="189" cy="179" r="3.46" fill="#fff"/>
+<circle cx="199" cy="149" r="3.46" fill="#fff"/>
+<circle cx="199" cy="159" r="3.46" fill="#fff"/>
+<circle cx="199" cy="169" r="3.46" fill="#fff"/>
+<circle cx="199" cy="179" r="3.46" fill="#fff"/>
+<circle cx="209" cy="149" r="3.46" fill="#fff"/>
+<circle cx="209" cy="159" r="3.46" fill="#fff"/>
+<circle cx="209" cy="169" r="3.46" fill="#fff"/>
+<circle cx="209" cy="179" r="3.46" fill="#fff"/>
+<circle cx="219" cy="149" r="3.46" fill="#fff"/>
+<circle cx="219" cy="159" r="3.46" fill="#fff"/>
+<circle cx="219" cy="169" r="3.46" fill="#fff"/>
+<circle cx="219" cy="179" r="3.46" fill="#fff"/>
+<circle cx="269" cy="149" r="2.87" fill="#fff"/>
+<circle cx="269" cy="159" r="2.87" fill="#fff"/>
+<circle cx="269" cy="169" r="2.87" fill="#fff"/>
+<circle cx="269" cy="179" r="2.87" fill="#fff"/>
+<circle cx="279" cy="149" r="2.87" fill="#fff"/>
+<circle cx="279" cy="159" r="2.87" fill="#fff"/>
+<circle cx="279" cy="169" r="2.87" fill="#fff"/>
+<circle cx="279" cy="179" r="2.87" fill="#fff"/>
+<circle cx="289" cy="149" r="2.87" fill="#fff"/>
+<circle cx="289" cy="159" r="2.87" fill="#fff"/>
+<circle cx="289" cy="169" r="2.87" fill="#fff"/>
+<circle cx="289" cy="179" r="2.87" fill="#fff"/>
+<circle cx="299" cy="149" r="2.87" fill="#fff"/>
+<circle cx="299" cy="159" r="2.87" fill="#fff"/>
+<circle cx="299" cy="169" r="2.87" fill="#fff"/>
+<circle cx="299" cy="179" r="2.87" fill="#fff"/>
+<circle cx="69" cy="189" r="1.15" fill="#fff"/>
+<circle cx="69" cy="199" r="1.15" fill="#fff"/>
+<circle cx="69" cy="209" r="1.15" fill="#fff"/>
+<circle cx="69" cy="219" r="1.15" fill="#fff"/>
+<circle cx="79" cy="189" r="1.15" fill="#fff"/>
+<circle cx="79" cy="199" r="1.15" fill="#fff"/>
+<circle cx="79" cy="209" r="1.15" fill="#fff"/>
+<circle cx="79" cy="219" r="1.15" fill="#fff"/>
+<circle cx="89" cy="189" r="1.15" fill="#fff"/>
+<circle cx="89" cy="199" r="1.15" fill="#fff"/>
+<circle cx="89" cy="209" r="1.15" fill="#fff"/>
+<circle cx="89" cy="219" r="1.15" fill="#fff"/>
+<circle cx="99" cy="189" r="1.15" fill="#fff"/>
+<circle cx="99" cy="199" r="1.15" fill="#fff"/>
+<circle cx="99" cy="209" r="1.15" fill="#fff"/>
+<circle cx="99" cy="219" r="1.15" fill="#fff"/>
+<circle cx="149" cy="189" r="2.08" fill="#fff"/>
+<circle cx="149" cy="199" r="2.08" fill="#fff"/>
+<circle cx="149" cy="209" r="2.08" fill="#fff"/>
+<circle cx="149" cy="219" r="2.08" fill="#fff"/>
+<circle cx="159" cy="189" r="2.08" fill="#fff"/>
+<circle cx="159" cy="199" r="2.08" fill="#fff"/>
+<circle cx="159" cy="209" r="2.08" fill="#fff"/>
+<circle cx="159" cy="219" r="2.08" fill="#fff"/>
+<circle cx="169" cy="189" r="2.08" fill="#fff"/>
+<circle cx="169" cy="199" r="2.08" fill="#fff"/>
+<circle cx="169" cy="209" r="2.08" fill="#fff"/>
+<circle cx="169" cy="219" r="2.08" fill="#fff"/>
+<circle cx="179" cy="189" r="2.08" fill="#fff"/>
+<circle cx="179" cy="199" r="2.08" fill="#fff"/>
+<circle cx="179" cy="209" r="2.08" fill="#fff"/>
+<circle cx="179" cy="219" r="2.08" fill="#fff"/>
+<circle cx="229" cy="189" r="2.06" fill="#fff"/>
+<circle cx="229" cy="199" r="2.06" fill="#fff"/>
+<circle cx="229" cy="209" r="2.06" fill="#fff"/>
+<circle cx="229" cy="219" r="2.06" fill="#fff"/>
+<circle cx="239" cy="189" r="2.06" fill="#fff"/>
+<circle cx="239" cy="199" r="2.06" fill="#fff"/>
+<circle cx="239" cy="209" r="2.06" fill="#fff"/>
+<circle cx="239" cy="219" r="2.06" fill="#fff"/>
+<circle cx="249" cy="189" r="2.06" fill="#fff"/>
+<circle cx="249" cy="199" r="2.06" fill="#fff"/>
+<circle cx="249" cy="209" r="2.06" fill="#fff"/>
+<circle cx="249" cy="219" r="2.06" fill="#fff"/>
+<circle cx="259" cy="189" r="2.06" fill="#fff"/>
+<circle cx="259" cy="199" r="2.06" fill="#fff"/>
+<circle cx="259" cy="209" r="2.06" fill="#fff"/>
+<circle cx="259" cy="219" r="2.06" fill="#fff"/>
+<circle cx="309" cy="189" r="2.02" fill="#fff"/>
+<circle cx="309" cy="199" r="2.02" fill="#fff"/>
+<circle cx="309" cy="209" r="2.02" fill="#fff"/>
+<circle cx="309" cy="219" r="2.02" fill="#fff"/>
+<circle cx="319" cy="189" r="2.02" fill="#fff"/>
+<circle cx="319" cy="199" r="2.02" fill="#fff"/>
+<circle cx="319" cy="209" r="2.02" fill="#fff"/>
+<circle cx="319" cy="219" r="2.02" fill="#fff"/>
+<circle cx="329" cy="189" r="2.02" fill="#fff"/>
+<circle cx="329" cy="199" r="2.02" fill="#fff"/>
+<circle cx="329" cy="209" r="2.02" fill="#fff"/>
+<circle cx="329" cy="219" r="2.02" fill="#fff"/>
+<circle cx="339" cy="189" r="2.02" fill="#fff"/>
+<circle cx="339" cy="199" r="2.02" fill="#fff"/>
+<circle cx="339" cy="209" r="2.02" fill="#fff"/>
+<circle cx="339" cy="219" r="2.02" fill="#fff"/>
+<circle cx="29" cy="229" r="3.08" fill="#fff"/>
+<circle cx="29" cy="239" r="3.08" fill="#fff"/>
+<circle cx="29" cy="249" r="3.08" fill="#fff"/>
+<circle cx="29" cy="259" r="3.08" fill="#fff"/>
+<circle cx="39" cy="229" r="3.08" fill="#fff"/>
+<circle cx="39" cy="239" r="3.08" fill="#fff"/>
+<circle cx="39" cy="249" r="3.08" fill="#fff"/>
+<circle cx="39" cy="259" r="3.08" fill="#fff"/>
+<circle cx="49" cy="229" r="3.08" fill="#fff"/>
+<circle cx="49" cy="239" r="3.08" fill="#fff"/>
+<circle cx="49" cy="249" r="3.08" fill="#fff"/>
+<circle cx="49" cy="259" r="3.08" fill="#fff"/>
+<circle cx="59" cy="229" r="3.08" fill="#fff"/>
+<circle cx="59" cy="239" r="3.08" fill="#fff"/>
+<circle cx="59" cy="249" r="3.08" fill="#fff"/>
+<circle cx="59" cy="259" r="3.08" fill="#fff"/>
+<circle cx="109" cy="229" r="2.50" fill="#fff"/>
+<circle cx="109" cy="239" r="2.50" fill="#fff"/>
+<circle cx="109" cy="249" r="2.50" fill="#fff"/>
+<circle cx="109" cy="259" r="2.50" fill="#fff"/>
+<circle cx="119" cy="229" r="2.50" fill="#fff"/>
+<circle cx="119" cy="239" r="2.50" fill="#fff"/>
+<circle cx="119" cy="249" r="2.50" fill="#fff"/>
+<circle cx="119" cy="259" r="2.50" fill="#fff"/>
+<circle cx="129" cy="229" r="2.50" fill="#fff"/>
+<circle cx="129" cy="239" r="2.50" fill="#fff"/>
+<circle cx="129" cy="249" r="2.50" fill="#fff"/>
+<circle cx="129" cy="259" r="2.50" fill="#fff"/>
+<circle cx="139" cy="229" r="2.50" fill="#fff"/>
+<circle cx="139" cy="239" r="2.50" fill="#fff"/>
+<circle cx="139" cy="249" r="2.50" fill="#fff"/>
+<circle cx="139" cy="259" r="2.50" fill="#fff"/>
+<circle cx="189" cy="229" r="2.63" fill="#fff"/>
+<circle cx="189" cy="239" r="2.63" fill="#fff"/>
+<circle cx="189" cy="249" r="2.63" fill="#fff"/>
+<circle cx="189" cy="259" r="2.63" fill="#fff"/>
+<circle cx="199" cy="229" r="2.63" fill="#fff"/>
+<circle cx="199" cy="239" r="2.63" fill="#fff"/>
+<circle cx="199" cy="249" r="2.63" fill="#fff"/>
+<circle cx="199" cy="259" r="2.63" fill="#fff"/>
+<circle cx="209" cy="229" r="2.63" fill="#fff"/>
+<circle cx="209" cy="239" r="2.63" fill="#fff"/>
+<circle cx="209" cy="249" r="2.63" fill="#fff"/>
+<circle cx="209" cy="259" r="2.63" fill="#fff"/>
+<circle cx="219" cy="229" r="2.63" fill="#fff"/>
+<circle cx="219" cy="239" r="2.63" fill="#fff"/>
+<circle cx="219" cy="249" r="2.63" fill="#fff"/>
+<circle cx="219" cy="259" r="2.63" fill="#fff"/>
+<circle cx="269" cy="229" r="0.65" fill="#fff"/>
+<circle cx="269" cy="239" r="0.65" fill="#fff"/>
+<circle cx="269" cy="249" r="0.65" fill="#fff"/>
+<circle cx="269" cy="259" r="0.65" fill="#fff"/>
+<circle cx="279" cy="229" r="0.65" fill="#fff"/>
+<circle cx="279" cy="239" r="0.65" fill="#fff"/>
+<circle cx="279" cy="249" r="0.65" fill="#fff"/>
+<circle cx="279" cy="259" r="0.65" fill="#fff"/>
+<circle cx="289" cy="229" r="0.65" fill="#fff"/>
+<circle cx="289" cy="239" r="0.65" fill="#fff"/>
+<circle cx="289" cy="249" r="0.65" fill="#fff"/>
+<circle cx="289" cy="259" r="0.65" fill="#fff"/>
+<circle cx="299" cy="229" r="0.65" fill="#fff"/>
+<circle cx="299" cy="239" r="0.65" fill="#fff"/>
+<circle cx="299" cy="249" r="0.65" fill="#fff"/>
+<circle cx="299" cy="259" r="0.65" fill="#fff"/>
+<circle cx="69" cy="269" r="3.01" fill="#fff"/>
+<circle cx="69" cy="279" r="3.01" fill="#fff"/>
+<circle cx="69" cy="289" r="3.01" fill="#fff"/>
+<circle cx="69" cy="299" r="3.01" fill="#fff"/>
+<circle cx="79" cy="269" r="3.01" fill="#fff"/>
+<circle cx="79" cy="279" r="3.01" fill="#fff"/>
+<circle cx="79" cy="289" r="3.01" fill="#fff"/>
+<circle cx="79" cy="299" r="3.01" fill="#fff"/>
+<circle cx="89" cy="269" r="3.01" fill="#fff"/>
+<circle cx="89" cy="279" r="3.01" fill="#fff"/>
+<circle cx="89" cy="289" r="3.01" fill="#fff"/>
+<circle cx="89" cy="299" r="3.01" fill="#fff"/>
+<circle cx="99" cy="269" r="3.01" fill="#fff"/>
+<circle cx="99" cy="279" r="3.01" fill="#fff"/>
+<circle cx="99" cy="289" r="3.01" fill="#fff"/>
+<circle cx="99" cy="299" r="3.01" fill="#fff"/>
+<circle cx="149" cy="269" r="4.38" fill="#fff"/>
+<circle cx="149" cy="279" r="4.38" fill="#fff"/>
+<circle cx="149" cy="289" r="4.38" fill="#fff"/>
+<circle cx="149" cy="299" r="4.38" fill="#fff"/>
+<circle cx="159" cy="269" r="4.38" fill="#fff"/>
+<circle cx="159" cy="279" r="4.38" fill="#fff"/>
+<circle cx="159" cy="289" r="4.38" fill="#fff"/>
+<circle cx="159" cy="299" r="4.38" fill="#fff"/>
+<circle cx="169" cy="269" r="4.38" fill="#fff"/>
+<circle cx="169" cy="279" r="4.38" fill="#fff"/>
+<circle cx="169" cy="289" r="4.38" fill="#fff"/>
+<circle cx="169" cy="299" r="4.38" fill="#fff"/>
+<circle cx="179" cy="269" r="4.38" fill="#fff"/>
+<circle cx="179" cy="279" r="4.38" fill="#fff"/>
+<circle cx="179" cy="289" r="4.38" fill="#fff"/>
+<circle cx="179" cy="299" r="4.38" fill="#fff"/>
+<circle cx="229" cy="269" r="1.58" fill="#fff"/>
+<circle cx="229" cy="279" r="1.58" fill="#fff"/>
+<circle cx="229" cy="289" r="1.58" fill="#fff"/>
+<circle cx="229" cy="299" r="1.58" fill="#fff"/>
+<circle cx="239" cy="269" r="1.58" fill="#fff"/>
+<circle cx="239" cy="279" r="1.58" fill="#fff"/>
+<circle cx="239" cy="289" r="1.58" fill="#fff"/>
+<circle cx="239" cy="299" r="1.58" fill="#fff"/>
+<circle cx="249" cy="269" r="1.58" fill="#fff"/>
+<circle cx="249" cy="279" r="1.58" fill="#fff"/>
+<circle cx="249" cy="289" r="1.58" fill="#fff"/>
+<circle cx="249" cy="299" r="1.58" fill="#fff"/>
+<circle cx="259" cy="269" r="1.58" fill="#fff"/>
+<circle cx="259" cy="279" r="1.58" fill="#fff"/>
+<circle cx="259" cy="289" r="1.58" fill="#fff"/>
+<circle cx="259" cy="299" r="1.58" fill="#fff"/>
+<circle cx="309" cy="269" r="2.57" fill="#fff"/>
+<circle cx="309" cy="279" r="2.57" fill="#fff"/>
+<circle cx="309" cy="289" r="2.57" fill="#fff"/>
+<circle cx="309" cy="299" r="2.57" fill="#fff"/>
+<circle cx="319" cy="269" r="2.57" fill="#fff"/>
+<circle cx="319" cy="279" r="2.57" fill="#fff"/>
+<circle cx="319" cy="289" r="2.57" fill="#fff"/>
+<circle cx="319" cy="299" r="2.57" fill="#fff"/>
+<circle cx="329" cy="269" r="2.57" fill="#fff"/>
+<circle cx="329" cy="279" r="2.57" fill="#fff"/>
+<circle cx="329" cy="289" r="2.57" fill="#fff"/>
+<circle cx="329" cy="299" r="2.57" fill="#fff"/>
+<circle cx="339" cy="269" r="2.57" fill="#fff"/>
+<circle cx="339" cy="279" r="2.57" fill="#fff"/>
+<circle cx="339" cy="289" r="2.57" fill="#fff"/>
+<circle cx="339" cy="299" r="2.57" fill="#fff"/>
+<circle cx="29" cy="309" r="1.83" fill="#fff"/>
+<circle cx="29" cy="319" r="1.83" fill="#fff"/>
+<circle cx="29" cy="329" r="1.83" fill="#fff"/>
+<circle cx="29" cy="339" r="1.83" fill="#fff"/>
+<circle cx="39" cy="309" r="1.83" fill="#fff"/>
+<circle cx="39" cy="319" r="1.83" fill="#fff"/>
+<circle cx="39" cy="329" r="1.83" fill="#fff"/>
+<circle cx="39" cy="339" r="1.83" fill="#fff"/>
+<circle cx="49" cy="309" r="1.83" fill="#fff"/>
+<circle cx="49" cy="319" r="1.83" fill="#fff"/>
+<circle cx="49" cy="329" r="1.83" fill="#fff"/>
+<circle cx="49" cy="339" r="1.83" fill="#fff"/>
+<circle cx="59" cy="309" r="1.83" fill="#fff"/>
+<circle cx="59" cy="319" r="1.83" fill="#fff"/>
+<circle cx="59" cy="329" r="1.83" fill="#fff"/>
+<circle cx="59" cy="339" r="1.83" fill="#fff"/>
+<circle cx="109" cy="309" r="4.54" fill="#fff"/>
+<circle cx="109" cy="319" r="4.54" fill="#fff"/>
+<circle cx="109" cy="329" r="4.54" fill="#fff"/>
+<circle cx="109" cy="339" r="4.54" fill="#fff"/>
+<circle cx="119" cy="309" r="4.54" fill="#fff"/>
+<circle cx="119" cy="319" r="4.54" fill="#fff"/>
+<circle cx="119" cy="329" r="4.54" fill="#fff"/>
+<circle cx="119" cy="339" r="4.54" fill="#fff"/>
+<circle cx="129" cy="309" r="4.54" fill="#fff"/>
+<circle cx="129" cy="319" r="4.54" fill="#fff"/>
+<circle cx="129" cy="329" r="4.54" fill="#fff"/>
+<circle cx="129" cy="339" r="4.54" fill="#fff"/>
+<circle cx="139" cy="309" r="4.54" fill="#fff"/>
+<circle cx="139" cy="319" r="4.54" fill="#fff"/>
+<circle cx="139" cy="329" r="4.54" fill="#fff"/>
+<circle cx="139" cy="339" r="4.54" fill="#fff"/>
+<circle cx="189" cy="309" r="3.08" fill="#fff"/>
+<circle cx="189" cy="319" r="3.08" fill="#fff"/>
+<circle cx="189" cy="329" r="3.08" fill="#fff"/>
+<circle cx="189" cy="339" r="3.08" fill="#fff"/>
+<circle cx="199" cy="309" r="3.08" fill="#fff"/>
+<circle cx="199" cy="319" r="3.08" fill="#fff"/>
+<circle cx="199" cy="329" r="3.08" fill="#fff"/>
+<circle cx="199" cy="339" r="3.08" fill="#fff"/>
+<circle cx="209" cy="309" r="3.08" fill="#fff"/>
+<circle cx="209" cy="319" r="3.08" fill="#fff"/>
+<circle cx="209" cy="329" r="3.08" fill="#fff"/>
+<circle cx="209" cy="339" r="3.08" fill="#fff"/>
+<circle cx="219" cy="309" r="3.08" fill="#fff"/>
+<circle cx="219" cy="319" r="3.08" fill="#fff"/>
+<circle cx="219" cy="329" r="3.08" fill="#fff"/>
+<circle cx="219" cy="339" r="3.08" fill="#fff"/>
+<circle cx="269" cy="309" r="3.42" fill="#fff"/>
+<circle cx="269" cy="319" r="3.42" fill="#fff"/>
+<circle cx="269" cy="329" r="3.42" fill="#fff"/>
+<circle cx="269" cy="339" r="3.42" fill="#fff"/>
+<circle cx="279" cy="309" r="3.42" fill="#fff"/>
+<circle cx="279" cy="319" r="3.42" fill="#fff"/>
+<circle cx="279" cy="329" r="3.42" fill="#fff"/>
+<circle cx="279" cy="339" r="3.42" fill="#fff"/>
+<circle cx="289" cy="309" r="3.42" fill="#fff"/>
+<circle cx="289" cy="319" r="3.42" fill="#fff"/>
+<circle cx="289" cy="329" r="3.42" fill="#fff"/>
+<circle cx="289" cy="339" r="3.42" fill="#fff"/>
+<circle cx="299" cy="309" r="3.42" fill="#fff"/>
+<circle cx="299" cy="319" r="3.42" fill="#fff"/>
+<circle cx="299" cy="329" r="3.42" fill="#fff"/>
+<circle cx="299" cy="339" r="3.42" fill="#fff"/>
+<rect x="24" y="24" width="320" height="320" fill="none" stroke="#fff" stroke-width="1.5"/>
+<circle cx="159.0" cy="10" r="0.8" fill="#fff"/>
+<circle cx="169.0" cy="10" r="1.5" fill="#fff"/>
+<circle cx="179.0" cy="10" r="2.2" fill="#fff"/>
+<circle cx="189.0" cy="10" r="2.9" fill="#fff"/>
+<circle cx="199.0" cy="10" r="3.6" fill="#fff"/>
+<circle cx="209.0" cy="10" r="4.3" fill="#fff"/>
+<text x="44.0" y="358" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">a</text>
+<text x="15" y="47.0" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">8</text>
+<text x="84.0" y="358" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">b</text>
+<text x="15" y="87.0" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">7</text>
+<text x="124.0" y="358" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">c</text>
+<text x="15" y="127.0" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">6</text>
+<text x="164.0" y="358" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">d</text>
+<text x="15" y="167.0" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">5</text>
+<text x="204.0" y="358" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">e</text>
+<text x="15" y="207.0" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">4</text>
+<text x="244.0" y="358" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">f</text>
+<text x="15" y="247.0" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">3</text>
+<text x="284.0" y="358" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">g</text>
+<text x="15" y="287.0" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">2</text>
+<text x="324.0" y="358" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">h</text>
+<text x="15" y="327.0" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">1</text></svg>

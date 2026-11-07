@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 368 368" width="720" height="720">
+<rect width="368" height="368" fill="#000"/>
+<rect x="24" y="24" width="40" height="40" fill="#fff"/>
+<rect x="64" y="24" width="40" height="40" fill="#000"/>
+<rect x="104" y="24" width="40" height="40" fill="#fff"/>
+<rect x="144" y="24" width="40" height="40" fill="#000"/>
+<rect x="184" y="24" width="40" height="40" fill="#fff"/>
+<rect x="224" y="24" width="40" height="40" fill="#000"/>
+<rect x="264" y="24" width="40" height="40" fill="#fff"/>
+<rect x="304" y="24" width="40" height="40" fill="#000"/>
+<rect x="24" y="64" width="40" height="40" fill="#000"/>
+<rect x="64" y="64" width="40" height="40" fill="#fff"/>
+<rect x="104" y="64" width="40" height="40" fill="#000"/>
+<rect x="144" y="64" width="40" height="40" fill="#fff"/>
+<rect x="184" y="64" width="40" height="40" fill="#000"/>
+<rect x="224" y="64" width="40" height="40" fill="#fff"/>
+<rect x="264" y="64" width="40" height="40" fill="#000"/>
+<rect x="304" y="64" width="40" height="40" fill="#fff"/>
+<rect x="24" y="104" width="40" height="40" fill="#fff"/>
+<rect x="64" y="104" width="40" height="40" fill="#000"/>
+<rect x="104" y="104" width="40" height="40" fill="#fff"/>
+<rect x="144" y="104" width="40" height="40" fill="#000"/>
+<rect x="184" y="104" width="40" height="40" fill="#fff"/>
+<rect x="224" y="104" width="40" height="40" fill="#000"/>
+<rect x="264" y="104" width="40" height="40" fill="#fff"/>
+<rect x="304" y="104" width="40" height="40" fill="#000"/>
+<rect x="24" y="144" width="40" height="40" fill="#000"/>
+<rect x="64" y="144" width="40" height="40" fill="#fff"/>
+<rect x="104" y="144" width="40" height="40" fill="#000"/>
+<rect x="144" y="144" width="40" height="40" fill="#fff"/>
+<rect x="184" y="144" width="40" height="40" fill="#000"/>
+<rect x="224" y="144" width="40" height="40" fill="#fff"/>
+<rect x="264" y="144" width="40" height="40" fill="#000"/>
+<rect x="304" y="144" width="40" height="40" fill="#fff"/>
+<rect x="24" y="184" width="40" height="40" fill="#fff"/>
+<rect x="64" y="184" width="40" height="40" fill="#000"/>
+<rect x="104" y="184" width="40" height="40" fill="#fff"/>
+<rect x="144" y="184" width="40" height="40" fill="#000"/>
+<rect x="184" y="184" width="40" height="40" fill="#fff"/>
+<rect x="224" y="184" width="40" height="40" fill="#000"/>
+<rect x="264" y="184" width="40" height="40" fill="#fff"/>
+<rect x="304" y="184" width="40" height="40" fill="#000"/>
+<rect x="24" y="224" width="40" height="40" fill="#000"/>
+<rect x="64" y="224" width="40" height="40" fill="#fff"/>
+<rect x="104" y="224" width="40" height="40" fill="#000"/>
+<rect x="144" y="224" width="40" height="40" fill="#fff"/>
+<rect x="184" y="224" width="40" height="40" fill="#000"/>
+<rect x="224" y="224" width="40" height="40" fill="#fff"/>
+<rect x="264" y="224" width="40" height="40" fill="#000"/>
+<rect x="304" y="224" width="40" height="40" fill="#fff"/>
+<rect x="24" y="264" width="40" height="40" fill="#fff"/>
+<rect x="64" y="264" width="40" height="40" fill="#000"/>
+<rect x="104" y="264" width="40" height="40" fill="#fff"/>
+<rect x="144" y="264" width="40" height="40" fill="#000"/>
+<rect x="184" y="264" width="40" height="40" fill="#fff"/>
+<rect x="224" y="264" width="40" height="40" fill="#000"/>
+<rect x="264" y="264" width="40" height="40" fill="#fff"/>
+<rect x="304" y="264" width="40" height="40" fill="#000"/>
+<rect x="24" y="304" width="40" height="40" fill="#000"/>
+<rect x="64" y="304" width="40" height="40" fill="#fff"/>
+<rect x="104" y="304" width="40" height="40" fill="#000"/>
+<rect x="144" y="304" width="40" height="40" fill="#fff"/>
+<rect x="184" y="304" width="40" height="40" fill="#000"/>
+<rect x="224" y="304" width="40" height="40" fill="#fff"/>
+<rect x="264" y="304" width="40" height="40" fill="#000"/>
+<rect x="304" y="304" width="40" height="40" fill="#fff"/>
+<path d="M164.0 204.0 Q104.0 42.5 44.0 84.0" fill="none" stroke="#fff" stroke-width="6.7" stroke-linecap="round"/>
+<path d="M164.0 204.0 Q104.0 42.5 44.0 84.0" fill="none" stroke="#000" stroke-width="3.7" stroke-linecap="round"/>
+<path d="M164.0 204.0 Q224.0 89.5 284.0 124.0" fill="none" stroke="#fff" stroke-width="6.1" stroke-linecap="round"/>
+<path d="M164.0 204.0 Q224.0 89.5 284.0 124.0" fill="none" stroke="#000" stroke-width="3.1" stroke-linecap="round"/>
+<path d="M164.0 204.0 Q124.0 176.5 84.0 284.0" fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="round"/>
+<path d="M164.0 204.0 Q124.0 176.5 84.0 284.0" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M164.0 204.0 Q244.0 166.0 324.0 244.0" fill="none" stroke="#fff" stroke-width="6.4" stroke-linecap="round"/>
+<path d="M164.0 204.0 Q244.0 166.0 324.0 244.0" fill="none" stroke="#000" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M164.0 204.0 Q204.0 180.0 244.0 324.0" fill="none" stroke="#fff" stroke-width="5.2" stroke-linecap="round"/>
+<path d="M164.0 204.0 Q204.0 180.0 244.0 324.0" fill="none" stroke="#000" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M164.0 204.0 Q144.0 133.0 124.0 164.0" fill="none" stroke="#fff" stroke-width="5.8" stroke-linecap="round"/>
+<path d="M164.0 204.0 Q144.0 133.0 124.0 164.0" fill="none" stroke="#000" stroke-width="2.8" stroke-linecap="round"/>
+<path d="M164.0 204.0 Q184.0 16.5 204.0 44.0" fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="round"/>
+<path d="M164.0 204.0 Q184.0 16.5 204.0 44.0" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="44.0" cy="84.0" r="6.6" fill="#000" stroke="#fff" stroke-width="2"/>
+<circle cx="284.0" cy="124.0" r="5.8" fill="#000" stroke="#fff" stroke-width="2"/>
+<circle cx="84.0" cy="284.0" r="5.0" fill="#000" stroke="#fff" stroke-width="2"/>
+<circle cx="324.0" cy="244.0" r="6.2" fill="#000" stroke="#fff" stroke-width="2"/>
+<circle cx="244.0" cy="324.0" r="4.6" fill="#000" stroke="#fff" stroke-width="2"/>
+<circle cx="124.0" cy="164.0" r="5.4" fill="#000" stroke="#fff" stroke-width="2"/>
+<circle cx="204.0" cy="44.0" r="5.0" fill="#000" stroke="#fff" stroke-width="2"/>
+<circle cx="164.0" cy="204.0" r="9" fill="#fff" stroke="#000" stroke-width="3"/><circle cx="164.0" cy="204.0" r="3" fill="#000"/>
+<rect x="24" y="24" width="320" height="320" fill="none" stroke="#fff" stroke-width="1.5"/>
+<text x="44.0" y="358" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">a</text>
+<text x="15" y="47.0" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">8</text>
+<text x="84.0" y="358" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">b</text>
+<text x="15" y="87.0" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">7</text>
+<text x="124.0" y="358" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">c</text>
+<text x="15" y="127.0" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">6</text>
+<text x="164.0" y="358" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">d</text>
+<text x="15" y="167.0" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">5</text>
+<text x="204.0" y="358" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">e</text>
+<text x="15" y="207.0" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">4</text>
+<text x="244.0" y="358" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">f</text>
+<text x="15" y="247.0" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">3</text>
+<text x="284.0" y="358" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">g</text>
+<text x="15" y="287.0" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">2</text>
+<text x="324.0" y="358" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">h</text>
+<text x="15" y="327.0" fill="#fff" font-size="9" font-family="monospace" text-anchor="middle">1</text></svg>
