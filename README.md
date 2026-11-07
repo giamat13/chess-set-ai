@@ -15,11 +15,6 @@ Every version uses the same piece designs. The only difference is the model embl
 | Claude | `stl/claude/` | [image](images/preview_claude.png) |
 | GPT | `stl/gpt/` | [image](images/preview_gpt.png) |
 | Gemini | `stl/gemini/` | [image](images/preview_gemini.png) |
-| Grok | `stl/grok/` | [image](images/preview_grok.png) |
-| DeepSeek | `stl/deepseek/` | [image](images/preview_deepseek.png) |
-| Qwen | `stl/qwen/` | [image](images/preview_qwen.png) |
-| Perplexity | `stl/perplexity/` | [image](images/preview_perplexity.png) |
-| Google Antigravity | `stl/google-antigravity/` | [image](images/preview_google-antigravity.png) |
 | **No logo** | `stl/plain/` | [image](images/preview_plain.png) |
 
 The no-logo version replaces every emblem with a small network graph: a centre node and three outer nodes, all linked. It contains no trademarks, so it is the version to share on model sites.
@@ -55,7 +50,7 @@ Each folder has one file per piece. You need 1 king, 1 queen, 2 bishops, 2 knigh
 
 Every STL is checked by `src/print_check.py`: it fits the 256 mm build volume, has enough bed contact, does not tip over, has no part that starts in mid-air (slice by slice, as the slicer sees it), has no thin necks that would snap, and has walls of at least 0.8 mm (two lines of a 0.4 mm nozzle).
 
-- Scale: 100%. The king is about 86 mm tall and bases are 27 to 36 mm wide. The plate fits any bed of 180 x 180 mm or more.
+- Scale: 100% (sized for the 28 x 28 cm board). The king is about 52 mm tall and bases are 16 to 22 mm wide. The plate fits any bed of 120 x 120 mm or more.
 - Every piece is a single solid part, designed with 45° overhangs, so it prints without supports. Tree supports "touching build plate only" give a cleaner knight jaw, but are not required.
 - PLA or PETG, 0.16 or 0.2 mm layers, 3 walls, 15% gyroid infill.
 - Pieces are stable: they need 33° to 50° of tilt before they tip over (a normal chess piece needs about 15° to 25°).
@@ -66,7 +61,7 @@ Every STL is checked by `src/print_check.py`: it fits the 256 mm build volume, h
 
 A "neural network" board: white nodes on the dark squares, linked diagonally. The columns are the five effort levels (LOW to MAX) and three permission modes (MANUAL, ACCEPT EDITS, BYPASS PERMS). The rows show the context filling up from 12% to 87%, then AUTO COMPACT.
 
-- Regular size: 50 mm squares, 460 x 460 x 6 mm in all, made of 4 quarters (4 x 4 squares each) that fit the P1S.
+- Size: 28 x 28 cm (about 30.4 mm squares), 280 x 280 x 6 mm in all, made of 4 quarters of 140 x 140 mm (4 x 4 squares each) that fit the P1S.
 - Joint: dovetail tabs in the lower 3.5 mm only. The top 2.5 mm meets in a straight line on a square edge, so the seam is clean, and the quarters above rest on the tabs. Clearance 0.15 mm per side.
 - Print `board_TL` and `board_BR` face up, and `board_TR` and `board_BL` face down (the STLs are already oriented). None needs supports.
 - Two colours (AMS): load `color/board_<q>_white.stl` and `board_<q>_black.stl` together as one object. The top 0.6 mm is split into black and white.

@@ -2,8 +2,8 @@
 
 Usage: python src/build_board.py [clearance_mm]      (default 0.15 mm per side)
 
-Board: 8x8 squares of 50 mm inside a 30 mm frame = 460 x 460 mm, 6 mm thick.
-Each quarter is 4x4 squares (about 230 x 230 mm), so it fits the Bambu P1S bed (256 mm).
+Board: 8x8 squares of about 30.4 mm inside an 18.3 mm frame = 280 x 280 mm, 6 mm thick.
+Each quarter is 4x4 squares (140 x 140 mm), so it fits the Bambu P1S bed (256 mm).
 
 Joint: dovetail tabs in the lower 3.5 mm only. The top 2.5 mm meets in a straight line on the
 square edge, so the top face shows a clean seam, and the piece above sits on the tabs.
@@ -30,17 +30,18 @@ from build_set import write_stl
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "stl", "board")
 
-SQ, N = 50.0, 8
+W_REAL, N = 280.0, 8          # board is 28 x 28 cm
+SQ = W_REAL / (N + 2 * 24 / 40)  # square size, about 30.4 mm
 K = SQ / 40.0                 # scale from the 2D proposal (40 units per square)
-F = 24 * K                    # frame width, 30 mm
-W = N * SQ + 2 * F            # 460 mm
+F = 24 * K                    # frame width, about 18.3 mm
+W = N * SQ + 2 * F            # 280 mm
 C = W / 2                     # seam line (on the edge between squares d/e and 4/5)
 T, TAB_H, COLOR = 6.0, 3.5, 0.6
 SEAM = 0.1                    # each quarter stops this far short of the seam line (top part)
 LIFT = 0.2                    # vertical clearance above the tabs
 CLEAR = float(sys.argv[1]) if len(sys.argv) > 1 else 0.15
 NECK, HEAD, DEPTH = 14.0, 22.0, 12.0
-TAB_AT = (70.0, 170.0)        # tab centres, measured from the board centre along each seam
+TAB_AT = (40.0, 100.0)        # tab centres, measured from the board centre along each seam
 FONT = FontProperties(family="DejaVu Sans Mono", weight="bold")
 
 
@@ -110,13 +111,13 @@ def white_2d():
     for i, lab in enumerate(cols):
         x = F + i * SQ + SQ / 2
         if len(lab) == 2:
-            parts += [text(lab[0], 7 * K, x, yb + 4.2), text(lab[1], 7 * K, x, yb - 4.2)]
+            parts += [text(lab[0], 7 * K, x, yb + 3.36 * K), text(lab[1], 7 * K, x, yb - 3.36 * K)]
         else:
             parts.append(text(lab[0], 8 * K, x, yb))
     for r in range(N):  # rows from the top: AUTO COMPACT, then 87% .. 12% downwards
         y = W - F - r * SQ - SQ / 2
         if r == 0:
-            parts += [text("AUTO", 7 * K, F / 2 - 4.2, y, 90), text("COMPACT", 7 * K, F / 2 + 4.2, y, 90)]
+            parts += [text("AUTO", 7 * K, F / 2 - 3.36 * K, y, 90), text("COMPACT", 7 * K, F / 2 + 3.36 * K, y, 90)]
         else:
             parts.append(text(f"{int(12.5 * (N - r))}%", 8 * K, F / 2, y))
     return add(parts) ^ rect(0, 0, W, W)

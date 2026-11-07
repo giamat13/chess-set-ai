@@ -1,6 +1,6 @@
 """Printability and stability check for a Bambu Lab P1S (256 x 256 x 256 mm, 0.4 mm nozzle).
 
-Usage: python src/print_check.py [claude|gpt|plain|grok|gemini ...]   (default: all versions found in stl/)
+Usage: python src/print_check.py [claude|gpt|plain|gemini ...]   (default: all versions found in stl/)
 
 For every STL in stl/<version>/ it reports:
   - size: fits the P1S build volume

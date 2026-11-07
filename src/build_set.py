@@ -21,6 +21,7 @@ from svg_emblem import normalise, svg_shapes
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # project root (this file is in src/)
 SEG = 64  # circle resolution
+PIECE_SCALE = 280.0 / 460.0  # pieces drawn for a 46 cm board, scaled to the 28 cm board
 
 
 # ---------------------------------------------------------------- helpers
@@ -91,7 +92,7 @@ def ycyl(r, y_a, y_b, z, x=0.0, seg=SEG):
     return Manifold.cylinder(hi - lo, r, r, seg).rotate((-90, 0, 0)).translate((x, lo, z))
 
 
-def fan_rotor(r, y_a, y_b, z, blades=7):
+def fan_rotor(r, y_a, y_b, z, blades=6):
     """Cooling fan: hub + curved swept blades, axis along y."""
     lo, hi = min(y_a, y_b), max(y_a, y_b)
     parts = [ycyl(3.5, lo, hi, z, seg=40)]  # hub, big enough to carry the emblem
@@ -102,7 +103,7 @@ def fan_rotor(r, y_a, y_b, z, blades=7):
             t = i / 8
             rad = 1.8 + (r - 1.8) * t
             ang = a0 + 0.9 * t
-            pts.append((rad * np.cos(ang), rad * np.sin(ang), 0.5 + 0.5 * t))
+            pts.append((rad * np.cos(ang), rad * np.sin(ang), 0.8 + 0.5 * t))  # wide enough at 28 cm size
         sec = None
         for (x1, y1, w1), (x2, y2, w2) in zip(pts, pts[1:]):
             seg_cs = CrossSection.batch_hull(
@@ -215,7 +216,9 @@ def emblem_cs(model):
 
 
 def logo_file(model):
-    for name in (f"{model}.svg", f"{model}-icon.svg"):
+    # assets/ = models built by default; assets/extra/ = more logos, built only when named:
+    #   python src/build_all.py grok
+    for name in (f"{model}.svg", f"{model}-icon.svg", f"extra/{model}.svg", f"extra/{model}-icon.svg"):
         p = os.path.join(ROOT, "assets", name)
         if os.path.exists(p):
             return p
@@ -400,7 +403,7 @@ def rook():
         notch.append(box(6.0, cap_w + 2, 3.6, z0=z + wall_h - 3.4).rotate((0, 0, a)))
     ring = ring - union(notch)
     # heat-sink fins inside the battlements
-    fins = [box(1.1, cap_w - 5.2, wall_h - 1.8, cx=x, z0=z) for x in (-6.0, -3.0, 0.0, 3.0, 6.0)]
+    fins = [box(1.6, cap_w - 5.2, wall_h - 1.8, cx=x, z0=z) for x in (-6.0, -3.0, 0.0, 3.0, 6.0)]
     return union([base, tower, cap, ring] + fins)
 
 
@@ -520,7 +523,7 @@ def knight():
 
     # the mane is a thick cable running down the back, held by clips, into the base
     # the top end is buried in the head, so there is no loose cap
-    back = [(4.6, 42.0), (6.2, 40.6), (8.8, 36.8), (11.0, 31.0), (11.8, 25.0), (11.2, 18.0), (11.0, 11.0), (11.4, 5.0), (11.6, 1.0)]
+    back = [(4.6, 42.0), (6.2, 40.6), (8.8, 36.8), (11.0, 31.0), (11.8, 25.0), (11.2, 18.0), (11.0, 11.0), (10.2, 5.0), (9.4, 1.0)]  # ends on the pedestal, not past it
     cable = [(x + dx + 0.6, 0.0, z + zb) for x, z in back]
     parts.append(tube(cable, 1.9, seg=20))
     for k in (2, 4, 6):
@@ -595,7 +598,7 @@ def bishop():
     m = m + union(adds)
     # the model emblem is the knob on top of the mitre
     tip = zs - 0.3 + 21.0
-    m = m + cyl(5.4, 1.6, z0=tip - 2.2) + medallion(MODEL, 5.0, 3.6).translate((0, 0, tip + 3.2))
+    m = m + cyl(5.4, 2.2, z0=tip - 2.2) + medallion(MODEL, 5.0, 3.6).translate((0, 0, tip + 3.2))
     return m
 
 
@@ -647,18 +650,18 @@ def queen():
         rail = revolve([(r - 0.4, zr - 2.4), (r + 2.0, zr - 0.2), (r + 2.0, zr + 0.8), (r - 0.4, zr + 0.8)])
         adds.append(rail.translate((0, 0, z0)))
     for m_ in mull:
-        pts = [((R(zq) + 1.4) * np.cos(np.radians(m_)), (R(zq) + 1.4) * np.sin(np.radians(m_)), z0 + zq)
+        pts = [((R(zq) + 1.2) * np.cos(np.radians(m_)), (R(zq) + 1.2) * np.sin(np.radians(m_)), z0 + zq)
                for zq in np.linspace(w1, w2, 5)]
-        adds.append(tube(pts, 1.2, seg=12))
+        adds.append(tube(pts, 1.8, seg=12))  # thick bars: they must not snap at 28 cm size
     parts = [base, (body - union(cuts)) + union(adds)]
     zt = z0 + 61.0
     tilt = np.radians(16)
     for k in range(9):
-        sp = cyl(7.0, 1.6, 1.2, z0=-0.5, seg=20).rotate((0, 16, 0)).translate((8.4, 0, zt))
-        tip = rounded_box(2.8, 2.8, 2.8, 0.7, seg=10).translate((8.4 + 7 * np.sin(tilt), 0, zt + 7 * np.cos(tilt) - 1.2))
+        sp = cyl(7.0, 2.2, 1.8, z0=-0.5, seg=20).rotate((0, 16, 0)).translate((8.2, 0, zt))
+        tip = rounded_box(3.4, 3.4, 3.0, 0.8, seg=10).translate((8.4 + 7 * np.sin(tilt), 0, zt + 7 * np.cos(tilt) - 1.2))
         parts.append((sp + tip).rotate((0, 0, 360 / 9 * k)))
     # the model emblem is the crown jewel
-    parts.append(cyl(6.5, 1.6, z0=zt - 1.3))
+    parts.append(cyl(6.5, 2.2, z0=zt - 1.3))
     parts.append(medallion(MODEL, 6.0, 3.4).translate((0, 0, zt + 5.2)))
     return union(parts)
 
@@ -689,8 +692,10 @@ def king(emblem=None):
 
     zn = z0 + 44.0
     parts.append(revolve([(0, 0), (5.8, 0), (10.6, 4.8), (10.6, 8.0), (0, 8.0)]).translate((0, 0, zn - 0.3)))
+    # a solid ring under the battlements, so each battlement stands on a wide base
+    parts.append(cyl(1.2, 10.6, z0=zn + 7.4, seg=64) - cyl(3.0, 7.2, z0=zn + 7.0, seg=64))
     for k in range(10):
-        parts.append(box(2.0, 1.5, 1.8, cx=10.0, z0=zn + 7.4).rotate((0, 0, 360 / 10 * k + 18)))
+        parts.append(box(3.0, 2.6, 2.4, cx=9.0, z0=zn + 6.8).rotate((0, 0, 360 / 10 * k + 18)))
 
     # the network: layers of nodes, every node wired to every node of the next layer
     ct = zn + 7.7
@@ -702,11 +707,11 @@ def king(emblem=None):
         for la, lb in zip(nodes, nodes[1:] + [[out]]):
             for a in la:
                 for b in lb:
-                    net.append(tube([a, b], 1.15, seg=12))
+                    net.append(tube([a, b], 1.6, seg=12))  # thick enough not to snap at 28 cm size
         for la in nodes:
             for a in la:
-                net.append(sphere(1.9, *a, seg=24))
-        net.append(tube([(0.0, 0.0, ct + layers[1][0]), out], 1.6, seg=16))  # spine: carries the emblem
+                net.append(sphere(2.3, *a, seg=24))
+        net.append(tube([(0.0, 0.0, ct + layers[1][0]), out], 2.3, seg=16))  # spine: carries the emblem
         parts.append(union(net).rotate((0, 0, rot)))
     # output node = the model emblem, seen from every side
     e = medallion(emblem, 5.6, 3.4)
@@ -752,7 +757,7 @@ def main():
     for i, name in enumerate(names):
         fn, count = PIECES[name]
         print(f"@@now building {name} ({i + 1} of {len(names)})", flush=True)
-        m = fn()
+        m = fn().scale((PIECE_SCALE,) * 3)
         # drop zero-volume slivers left by booleans
         m = Manifold.compose([p for p in m.decompose() if p.volume() > 1.0])
         if m.status().name != "NoError":
@@ -774,7 +779,7 @@ def main():
         print(f"@@now building {side} plate", flush=True)
         order = ["rook_gpu", "knight_mcp", "bishop_terminal", kname,
                  "queen_context", "bishop_terminal", "knight_mcp", "rook_gpu"] + ["pawn_neuron"] * 8
-        pitch = 44.0
+        pitch = 44.0 * PIECE_SCALE
         plate = [built[n].translate(((k % 4 - 1.5) * pitch, (k // 4 - 1.5) * pitch, 0)) for k, n in enumerate(order)]
         write_stl(Manifold.compose(plate), os.path.join(OUT, f"plate_{side}_16_pieces.stl"))
         print(f"plate_{side}_16_pieces: done", flush=True)

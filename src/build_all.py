@@ -1,7 +1,7 @@
 """Build every version: claude, plain, and one per SVG in assets/.
 
 Usage: python src/build_all.py            # all versions
-       python src/build_all.py grok gemini  # only these
+       python src/build_all.py gpt gemini  # only these
 
 For each version: write stl/<version>/, render images/preview_<version>.png, then run the
 P1S print check on its files. To add a new version, drop <name>.svg into assets/ and run this.
